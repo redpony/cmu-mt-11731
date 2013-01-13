@@ -2,7 +2,7 @@
 layout: default
 title: 11-731
 ---
-# Machine Translation | 11-731 | Spring 2012
+# Machine Translation | 11-731 | Spring 2013
 
 ## At a Glance
 
@@ -69,6 +69,7 @@ Welcome to Machine Translation (11-731). This 12-credit graduate course will pro
 
 ## Piazza
 
-This term we will be using Piazza for class discussion. The system is highly catered to getting you help fast and efficiently from classmates, the TA, Alon, and me. Rather than emailing questions to the teaching staff, we encourage you to post your questions on Piazza. It supports LaTeX for equations, syntax highlighting for code and keeps all materials related to the course in one place.
+This semester we will be using Piazza for class discussion. The system is designed to get you help fast and efficiently from classmates, Wang, Alon, and me. Rather than emailing questions to the instructors, we encourage you to post your questions on [Piazza](https://piazza.com/cmu/spring2013/11731/home). It supports LaTeX for equations, syntax highlighting for code and keeps all materials related to the course in one place.
 
-Find our class page at: https://piazza.com/cmu/spring2013/11731/home
+[Find our class page here.](https://piazza.com/cmu/spring2013/11731/home)
+
