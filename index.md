@@ -7,17 +7,18 @@ title: 11-731
 ## At a Glance
 
  * **Instructor**: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) | GHC 5707 | Mondays 11–12
- * **Instructor**: [Alon Lavie](http://www.cs.cmu.edu/~alavie) | GHC 5713 | TBA)
- * **TA**: [Wang Ling](http://www.cs.cmu.edu/~lingwang/) | GHC XXXX | TBA
- * **Location**: TBA
- * **Time**: Tuesday/Thursday 1:30–3:00
- * **Textbook**: Philipp Koehn, *Statistical Machine Translation* | [Publisher](https://www.cambridge.org/us/catalogue/catalogue.asp?isbn=9780521874151) | [Amazon](http://www.amazon.com/dp/0521874157)
- * **Piazza**: [discussion board](https://piazza.com/class#spring2013/11731)
- * **GitHub**: [course repository](https://github.com/redpony/mt_s2013)
+ * **Instructor**: [Alon Lavie](http://www.cs.cmu.edu/~alavie) | GHC 5713 | TBA
+ * **TA**: [Wang Ling](http://www.cs.cmu.edu/~lingwang/) | GHC 5503 | TBA
+ * **Location**: [NSH 1305](http://www.cs.cmu.edu/~help/AV-Help/AV-Rooms/NSH1305.html)
+ * **Time**: Tuesday/Thursday 1:30–2:50
+ * **Textbook**: Philipp Koehn, *Statistical Machine Translation* | [Publisher](https://www.cambridge.org/us/catalogue/catalogue.asp?isbn=9780521874151) | [Amazon](http://www.amazon.com/dp/0521874157) | [Errata](http://www.statmt.org/book/errata.html)
+ * **Prerequisites**: Algorithms for NLP, Machine learning
+ * **Piazza**: [discussion board](https://piazza.com/cmu/spring2013/11731/home)
+ * **GitHub**: [course repository](https://github.com/clab/sp2013.11-731)
 
 ## Overview
 
-Welcome to Machine Translation (11-731).
+Welcome to Machine Translation (11-731). This 12-credit graduate course will provide a comprehensive overview of current techniques in statistical machine translation, such as those used by [Google Translate](http://translate.google.com/) and [Bing Translator](http://www.bing.com/translator).
 
 ## Syllabus
 
@@ -66,7 +67,8 @@ Welcome to Machine Translation (11-731).
   </tbody>
 </table>
 
-## Acknowledgements
+## Piazza
 
-This course draws heavily in structure and content from the [MT course](http://mt-class.org) developed by [Adam Lopez](http://www.cs.jhu.edu/~alopez/), [Chris Callison-Burch](http://www.cs.jhu.edu/~ccb/), and [Matt Post](http://www.cs.jhu.edu/~post/) that was taught at Johns Hopkins University in Spring 2012.
+This term we will be using Piazza for class discussion. The system is highly catered to getting you help fast and efficiently from classmates, the TA, Alon, and me. Rather than emailing questions to the teaching staff, we encourage you to post your questions on Piazza. It supports LaTeX for equations, syntax highlighting for code and keeps all materials related to the course in one place.
 
+Find our class page at: https://piazza.com/cmu/spring2013/11731/home
