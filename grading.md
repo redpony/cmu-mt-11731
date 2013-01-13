@@ -4,37 +4,48 @@ title: Grading
 ---
 # Grading
 
+Grades are out of 100. Scores in the range of 70–80 will earn a C, 80–90 a B, and 90–100 an A; those who score *over 100* will earn an A+. There are four components to your score:
+
+ * [Reading responses](#reading_responses_10_responses_1_point_each) (10 points)
+ * [Homeworks](#homeworks_4_assignments_10_points_each) (40 points)
+ * [In-class presentation](#inclass_presentation_language_in_ten_minutes_10_points) (10 points)
+ * [Course project](#course_project_40_points) (40 points)
+
+Make sure to read the [late work policy](#late_work_policy).
+
 ## Reading responses (10 responses, 1 point each)
 
-Each week you must read and post a comment to Piazza on **two** of the recommended readings per week. To receive credit for a response, it must be posted before class starts on the day the reading is assigned. The response should be about one paragraph and should be a summary suitable for explaining the material
+Each week you must read and post at least one question make a substantive answer to another question about the *recommended readings* (not the Koehn textbook) to the [Piazza discussion board](https://piazza.com/cmu/spring2013/11731/home). Suitable questions are things you do not understand regarding motivation, assumptions, or background. Some of these papers are quite difficult to read without a lot of background knowledge: the goal is to get more out of these papers than you would by reading them alone. While criticism of the papers is acceptable, your primary goal should be improving your understanding.
 
 ## Homeworks (4 assignments, 10 points each)
 
-A major part of your grade will be four competitive homework assignments focusing on important subproblems in machine translation: word alignment, automatic translation evaluation, decoding, and system building.
+A major part of your grade will be four competitive homework assignments focusing on important subproblems in machine translation:
 
-You will earn a passing grade (7 points) by correctly implementing a standard algorithm that is indicated for each assignment. Additional credit will be given for building the best system according to an automatic evaluation criterion: 6 points for the best system, 5 points for the second best, etc. In the unlikely event of a perfect tie, the student or group submitting their results first will rank higher. The long and short of it is: to receive an A in this class, you must compete!
+ * **Alignment**: given a set of translated documents that are aligned at the sentence level, identify the words that are translations of each other.
+ * **Evaluation**: measure the quality of a translation hypothesis relative to a gold-standard reference translation
+ * **Decoding**: find the highest scoring translation of a sentence, given a translation model and an input sentence.
+ * **Reranking** (tentative): find the most accurate translation of a sentence, given an input and a list of ranked alternative translations.
 
- * Alignment: given a set of translated documents that are aligned at the sentence level, identify the words that are translations of each other.
- * Decoding: find the most probable translation of a sentence, given a translation model and a new input sentence.
- * Evaluation: design a metric of translation accuracy that correlates with human judgement.
- * Reranking: find the most accurate translation of a sentence, given an input and a list of ranked alternative translations.
+You will earn a passing grade (**7 points**) by correctly implementing a standard algorithm that is indicated for each assignment. Additional credit will be given for building the best system according to an automatic evaluation criterion: **6 bonus points** for the *best* system, **5 points** for the second best, etc. Additionally, **1 bonus point** will be awarded to the *first* student/group to post a correct implementation of the standard algorithm and its output to GitHub. In the (unlikely) event of a perfect tie, the student or group submitting their results first will rank higher. The long and short of it is: *to receive an A in this class, you must compete*!
+
+Homeworks will be evaluated based on what is submitted to your GitHub repository. To receive credit, **both code and the specified output must be submitted**. You may use any programming language you choose. If certain data or tools are off limits, these will be indicated in the assignment.
 
 ## In-Class Presentation: Language in Ten Minutes (10 points)
 
-Developing effective translation models and systems requires knowing how languages work. You will be required to give a 10-minute presentation on a particular language that you do not speak natively.
+Developing effective translation models and systems requires knowing how languages work. You will be required to give a 10-minute presentation on a particular language *that you do not speak natively*.
 
-You should prepare three to six content slides for your presentation. The following points should be covered:
+You should prepare three to six content slides for your presentation which are due in **PDF format at 11:59pm the day before your presentation**. The following points should be covered:
 
- * Demographics, location, number of speakers
+ * Demographics, location, number of speakers, related languages
  * Important typological characteristics (morphology, syntax, information structure)
  * Computational challenges: orthographic issues, existence of corpora, parsers, and other tools
  * Previous work in machine translation
 
-Ethnologue, Omniglot, About World Languages, and the Machine Translation Archive, previous courses that have used this assignment at Johns Hopkins and Columbia.
+Recommend resources include: [Ethnologue](http://www.ethnologue.com/), [Omniglot](http://www.omniglot.com/), [The World Atlas of Language Structures](http://wals.info/), the [Machine Translation Archive](http://www.mt-archive.info), previous courses that have used this assignment at [Johns Hopkins](http://mt-class.org) and [Columbia](https://sites.google.com/site/comse6998machinetranslation/language-in-10-minutes), and native speakers.
 
 Presentations will be graded on thoroughness, clarity, and conciseness.
 
-## Course Projects (40 points)
+## Course Project (40 points)
 
 Your course project will be a substantial research effort carried out by each student or groups of students (max group size = 3). It should have clearly articulated purpose, evaluation plan.
 
