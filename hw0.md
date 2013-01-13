@@ -12,7 +12,7 @@ We will be using *public* GitHub repositories for all assignments in this course
 
  * [Create a user account on GitHub](https://github.com/signup/free) if you do not have one. *You are welcome to reuse an existing account for this course*.
  * Fork the course [master git repository](https://github.com/clab/sp2013.11-731). You can use the web interface to do this:
-![Fork](/img/fork.png)
+![Fork]({{site.baseurl}}/img/fork.png)
 
  * Post the URL of your forked corse repository to Piazza (it should be something like `git://github.com/username/sp2013.11-731.git`)
 
