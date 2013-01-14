@@ -11,5 +11,5 @@ reading:
   -
     author: Dyer et al.
     title: You'd like to know
-    url: http://www.aclweb.org/anthology/P06-1124.pdf
+    url: http://noteyet
 ---
