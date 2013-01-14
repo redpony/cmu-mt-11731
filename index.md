@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 11-731
+title: Overview
 ---
 # Machine Translation | 11-731 | Spring 2013
 
@@ -96,6 +96,7 @@ This semester we will be using Piazza for class discussion. The system is design
  * [Chris Callison-Burch](http://www.cs.jhu.edu/~ccb/) and [Philipp Koehn](http://homepages.inf.ed.ac.uk/pkoehn/) taught a one week MT course at ESSLI 2005: [1](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day1.pdf) [2](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day2.pdf) [3](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day3.pdf) [4](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day4.pdf) [5](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day5.pdf)
  * [Machine Translation course at Columbia University](https://sites.google.com/site/comse6998machinetranslation/)
  * [Machine Translation course at ISI](http://nlg.isi.edu/teaching/cs599mt/)
+ * [Machine Translation course at Johns Hopkins University](http://mt-class.org/)
  * [Machine Translation course at Simon Fraser University](http://www.cs.sfu.ca/~anoop/teaching/CMPT-882-Fall-2011/)
  * [Machine Translation course at the University of Edinburgh](http://www.inf.ed.ac.uk/teaching/courses/mt/)
  * [Machine Translation course at the University of Washington](https://catalyst.uw.edu/workspace/kristout/20547/123745)
