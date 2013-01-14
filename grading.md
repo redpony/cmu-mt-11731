@@ -73,8 +73,8 @@ Groups projects of any size are permitted, but we will require an amount of work
 
 Homeworks are due at 11:59pm on the date specified.
 
-However, since the world is a complicated place full of illnesses, job interviews, and conference deadlines, each of you gets *10 late days* to use during the term (1 day = 24 consecutive hours). These are only intended to cover situations where you would normally ask the instructors for an extension. Rather than ask us, just use a late day. If you *do* ask us, we will say "Use a late day!". Once you have no late days left, your homeworks will receive no points. **We will not grant extra late days, even for special circumstances.**
+However, since the world is a complicated place full of illnesses, job interviews, and conference deadlines, each of you gets *10 late days* to use during the term (1 day = 24 consecutive hours). These are only intended to cover situations where you would normally ask the instructors for an extension. Rather than ask us, just use a late day. If you *do* ask us, we will say “Use a late day!”. Once you have no late days left, your homeworks will receive no points. **We will not grant extra late days, even for special circumstances.**
 
-Note: leaderboard ranking for the purposes of obtaining points will be determined at the deadline. Late submissions will enable you to receive a passing grade, but not to displace more punctual students.
+*Note*: leaderboard ranking for the purposes of obtaining points will be determined at the deadline. Late submissions will enable you to receive a passing grade, but not to displace more punctual students.
 
 
