@@ -14,8 +14,6 @@ We will be using *public* GitHub repositories for all assignments in this course
  * Fork the course [master git repository](https://github.com/clab/sp2013.11-731). You can use the web interface to do this:
 ![Fork]({{site.baseurl}}/img/fork.png)
 
- * Post the URL of your forked course repository to [Piazza](https://piazza.com/cmu/spring2013/11731/home) (it should be something like `git://github.com/username/sp2013.11-731.git`)
-
  * Check out the git repository you forked on the machine where you will do your coding assignments (you can use a shared machine, desktop, or laptop).
 
 ## Software dependencies
@@ -45,6 +43,10 @@ In this section, you will pick a screen name for the course leaderboard and tell
        git add output.txt
        git commit -m 'my first check-in'
        git push
+
+## Post your GitHub repository to Piazza
+
+ * Post the URL of your forked course repository to [Piazza](https://piazza.com/cmu/spring2013/11731/home) (it should be something like `git://github.com/username/sp2013.11-731.git`)
 
 That’s it, you’re done!
 

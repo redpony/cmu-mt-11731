@@ -73,3 +73,30 @@ This semester we will be using Piazza for class discussion. The system is design
 
 [Find our class page here.](https://piazza.com/cmu/spring2013/11731/home)
 
+## Software
+
+ * [cdec](http://www.cdec-decoder.org/) is a machine translation research platform developed at CMU (C++)
+ * [Moses](http://www.statmt.org/moses/) is a widely-used machine translation toolkit that includes phrase-based and syntactic model support (C++)
+ * [Joshua](http://cs.jhu.edu/~ccb/joshua/) is a translation toolkit designed for syntax-based models (Joshua)
+ * [SRILM](http://www.speech.sri.com/projects/srilm/) is SRI’s language modeling toolkit (C++)
+ * [KenLM](http://kheafield.com/code/kenlm/) is a highly optimized library for representing and querying $n$-gram language models (C++)
+ * [BerkeleyLM](http://code.google.com/p/berkeleylm/) is another $n$-gram language model library (Java)
+ * [Giza++](http://code.google.com/p/giza-pp/) implements EM training for the IBM translation models and is widely used for word alignment (C++)
+
+## Freely Available (Parallel) Corpora
+
+ * [WIT<sup>3</sup>](https://wit3.fbk.eu/) is a transcribed corpus of [TED talks](http://www.ted.com/talks) in many languages (small/medium).
+ * The [2012 Workshop on Machine Translation Shared Task](http://statmt.org/wmt12/translation-task.html) distributes European Parliament (large) and News Commentary (medium) parallel data as well as standard development and test sets.
+ * [OPUS](http://opus.lingfil.uu.se/) is a growing collection of parallel data in many domains and languages.
+
+## Other MT Courses
+
+ * A [one week MT course](http://staffwww.dcs.shef.ac.uk/people/T.Cohn/mt/) by [Trevor Cohn](http://staffwww.dcs.shef.ac.uk/people/T.Cohn/)
+ * A [one week MT course](http://www.cs.jhu.edu/~alopez/esslli2010.html) at ESSLI 2010 by [Adam Lopez](http://www.cs.jhu.edu/~alopez/)
+ * [Chris Callison-Burch](http://www.cs.jhu.edu/~ccb/) and [Philipp Koehn](http://homepages.inf.ed.ac.uk/pkoehn/) taught a one week MT course at ESSLI 2005: [1](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day1.pdf) [2](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day2.pdf) [3](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day3.pdf) [4](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day4.pdf) [5](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day5.pdf)
+ * [Machine Translation course at Columbia University](https://sites.google.com/site/comse6998machinetranslation/)
+ * [Machine Translation course at ISI](http://nlg.isi.edu/teaching/cs599mt/)
+ * [Machine Translation course at Simon Fraser University](http://www.cs.sfu.ca/~anoop/teaching/CMPT-882-Fall-2011/)
+ * [Machine Translation course at the University of Edinburgh](http://www.inf.ed.ac.uk/teaching/courses/mt/)
+ * [Machine Translation course at the University of Washington](https://catalyst.uw.edu/workspace/kristout/20547/123745)
+

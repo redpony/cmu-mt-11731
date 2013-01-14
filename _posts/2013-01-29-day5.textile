@@ -1,5 +1,5 @@
 ---
-title: Better Lexical Models
+title: Lexical Translation Models II
 slides: 05.lexical2.pdf
 day: 5
 book: 4
