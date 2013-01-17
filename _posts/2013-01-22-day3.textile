@@ -2,7 +2,7 @@
 title: Language Models
 slides: 01.intro.pdf
 day: 3
-book: 7
+book: 4.3, 7
 reading:
   -
     author: Kneser and Ney

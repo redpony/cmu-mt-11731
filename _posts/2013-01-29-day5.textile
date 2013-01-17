@@ -2,7 +2,7 @@
 title: Lexical Translation Models II
 slides: 05.lexical2.pdf
 day: 5
-book: 4
+book: 4.4, 4.6
 reading:
   -
     author: Brown et al.
