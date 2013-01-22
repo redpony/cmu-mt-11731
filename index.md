@@ -8,7 +8,7 @@ title: Overview
 
  * **Instructor**: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) | GHC 5707 | Mondays 11–12
  * **Instructor**: [Alon Lavie](http://www.cs.cmu.edu/~alavie) | GHC 5713 | TBA
- * **TA**: [Wang Ling](http://www.cs.cmu.edu/~lingwang/) | GHC 5503 | TBA
+ * **TA**: [Wang Ling](http://www.cs.cmu.edu/~lingwang/) | GHC 5503 | Tuesdays 10–11
  * **Location**: [NSH 1305](http://www.cs.cmu.edu/~help/AV-Help/AV-Rooms/NSH1305.html)
  * **Time**: Tuesday/Thursday 1:30–2:50
  * **Textbook**: Philipp Koehn, *Statistical Machine Translation* | [Publisher](https://www.cambridge.org/us/catalogue/catalogue.asp?isbn=9780521874151) | [Amazon](http://www.amazon.com/dp/0521874157) | [Errata](http://www.statmt.org/book/errata.html)
