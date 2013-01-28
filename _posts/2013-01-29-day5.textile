@@ -16,4 +16,8 @@ reading:
     author: Dyer et al.
     title: Unsupervised Word Alignment with Arbitrary Features
     url: http://www.aclweb.org/anthology/P/P11/P11-1042.pdf
+  -
+    author: Yamada and Knight
+    title: A Syntax-based Statistical Translation Model
+    url: http://acl.ldc.upenn.edu/P/P01/P01-1067.pdf
 ---
