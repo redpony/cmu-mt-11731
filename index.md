@@ -44,7 +44,7 @@ Welcome to Machine Translation (11-731). This 12-credit graduate course will pro
       {% endif %}
       {% endif %}
       {% if post.language-in-10 %}
-      Language in 10: <a href="slides/{{post.language-in-10}}.pdf">{{ post.language-in-10 }}</a><br />
+      L-in-10: <a href="slides/{{post.language-in-10 | downcase}}.pdf">{{ post.language-in-10 }}</a><br />
       {% endif %}
     </td>
     <td>{% if post.book %}<i>SMT</i> Ch. {{ post.book }} {% else %} <i>none</i> {% endif %}</td>
