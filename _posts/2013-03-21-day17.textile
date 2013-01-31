@@ -1,0 +1,6 @@
+---
+title: Semantics
+slides: 17.semantics.pdf
+day: 17
+reading:
+---

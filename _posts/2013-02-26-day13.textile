@@ -1,0 +1,6 @@
+---
+title: Syntax in MT I
+slides: 13.syntax1.pdf
+day: 13
+reading:
+---

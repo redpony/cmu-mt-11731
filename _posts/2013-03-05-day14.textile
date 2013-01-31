@@ -1,0 +1,6 @@
+---
+title: Syntax Decoding
+slides: 14.decoding1.pdf
+day: 14
+reading:
+---

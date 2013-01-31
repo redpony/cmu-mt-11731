@@ -1,0 +1,6 @@
+---
+title: Discriminative Training II
+slides: 12.eval1.pdf
+day: 12
+reading:
+---

@@ -1,0 +1,6 @@
+---
+title: Quality Estimation
+slides: 18.qestimation.pdf
+day: 18
+reading:
+---

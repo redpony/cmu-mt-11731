@@ -1,0 +1,6 @@
+---
+title: System Combination
+slides: 19.syscomb.pdf
+day: 19
+reading:
+---

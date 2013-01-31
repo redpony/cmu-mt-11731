@@ -1,0 +1,6 @@
+---
+title: Syntax in MT II
+slides: 14.syntax2.pdf
+day: 14
+reading:
+---

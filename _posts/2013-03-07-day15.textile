@@ -1,0 +1,6 @@
+---
+title: Decoding
+slides: 15.decoding.pdf
+day: 15
+reading:
+---

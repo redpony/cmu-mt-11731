@@ -1,0 +1,6 @@
+---
+title: Discriminative Training I
+slides: 11.disc1.pdf
+day: 11
+reading:
+---

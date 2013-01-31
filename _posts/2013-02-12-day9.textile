@@ -1,0 +1,6 @@
+---
+title: Evaluation I
+slides: 09.eval1.pdf
+day: 9
+reading:
+---

@@ -1,0 +1,6 @@
+---
+title: Morphology in MT
+slides: 16.morphology.pdf
+day: 16
+reading:
+---
