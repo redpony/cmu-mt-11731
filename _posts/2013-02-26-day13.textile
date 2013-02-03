@@ -3,4 +3,16 @@ title: Syntax in MT I
 slides: 13.syntax1.pdf
 day: 13
 reading:
+  -
+    title: Stochastic Inversion Transduction Grammars and Bilingual Parsing of Parallel Corpora
+    author: Wu
+    url: http://acl.ldc.upenn.edu/J/J97/J97-3002.pdf
+  -
+    title: Hierarchical Phrased-Based Translation
+    author: Chiang
+    url: http://www.mitpressjournals.org/doi/pdf/10.1162/coli.2007.33.2.201
+  -
+    title: An Introduction to Synchronous Grammars
+    author: Chiang
+    url: http://isi.edu/~chiang/papers/synchtut.pdf
 ---

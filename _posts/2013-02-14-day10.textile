@@ -3,4 +3,12 @@ title: Evaluation II
 slides: 10.eval2.pdf
 day: 10
 reading:
+  -
+    author: Callison-Burch et al.
+    title: Findings of the 2010 Joint Workshop on Statistical Machine Translation and Metrics for Machine Translation
+    url: http://www.aclweb.org/anthology-new/W/W10/W10-1703.pdf
+  -
+    author: Snover et al.
+    title: Fluency, Adequacy, or HTER? Exploring Different Human Judgments with a Tunable MT Metric
+    url: http://www.cs.umd.edu/~snover/pub/wsmt09/terp_wsmt09.pdf
 ---

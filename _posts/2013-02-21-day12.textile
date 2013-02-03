@@ -1,6 +1,14 @@
 ---
 title: Discriminative Training II
-slides: 12.eval1.pdf
+slides: 12.disc2.pdf
 day: 12
 reading:
+  -
+    title: Liang et al.
+    author: An end-to-end discriminative approach to machine translation
+    url: http://cs.stanford.edu/~pliang/papers/discriminative-mt-acl2006.pdf
+  -
+    title: Structured Ramp-Loss Minimization for Machine Translation
+    author: Gimpel and Smith
+    url: http://www.cs.cmu.edu/~nasmith/papers/gimpel+smith.naacl12.pdf
 ---

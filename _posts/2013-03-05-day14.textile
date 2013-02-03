@@ -3,4 +3,8 @@ title: Syntax Decoding
 slides: 14.decoding1.pdf
 day: 14
 reading:
+  -
+    title: 'Forest rescoring: faster decoding with integrated language models'
+    author: Huang and Chiang
+    url: http://www.isi.edu/~chiang/papers/acl-cube.pdf
 ---
