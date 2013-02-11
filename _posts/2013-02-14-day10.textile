@@ -4,11 +4,19 @@ slides: 10.eval2.pdf
 day: 10
 reading:
   -
-    author: Callison-Burch et al.
-    title: Findings of the 2010 Joint Workshop on Statistical Machine Translation and Metrics for Machine Translation
-    url: http://www.aclweb.org/anthology-new/W/W10/W10-1703.pdf
+    author: Lavie and Denkowski
+    title: The METEOR Metric for Automatic Evaluation of Machine Translation
+    url: http://www.cs.cmu.edu/afs/cs.cmu.edu/project/mteval-1/Papers/MT-Journal-2009/meteor-mtj-2009.pdf
+  -
+    author: Papineni et al.
+    title: 'BLEU: a Method for Automatic Evaluation of Machine Translation'
+    url: http://acl.ldc.upenn.edu/P/P02/P02-1040.pdf
   -
     author: Snover et al.
-    title: Fluency, Adequacy, or HTER? Exploring Different Human Judgments with a Tunable MT Metric
-    url: http://www.cs.umd.edu/~snover/pub/wsmt09/terp_wsmt09.pdf
+    title: A Study of Translation Edit Rate with Targeted Human Annotation
+    url: http://www.cs.umd.edu/~snover/pub/amta06/ter_amta.pdf
+  -
+    author: Dreyer and Marcu
+    title: 'HyTER: Meaning-Equivalent Semantics for Translation Evaluation'
+    url: http://www.aclweb.org/anthology-new/N/N12/N12-1017.pdf
 ---

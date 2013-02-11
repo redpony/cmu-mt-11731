@@ -77,7 +77,8 @@ This semester we will be using Piazza for class discussion. The system is design
 
  * [cdec](http://www.cdec-decoder.org/) is a machine translation research platform developed at CMU (C++)
  * [Moses](http://www.statmt.org/moses/) is a widely-used machine translation toolkit that includes phrase-based and syntactic model support (C++)
- * [Joshua](http://cs.jhu.edu/~ccb/joshua/) is a translation toolkit designed for syntax-based models (Joshua)
+ * [Joshua](http://cs.jhu.edu/~ccb/joshua/) is a translation toolkit designed for syntax-based models (Java)
+ * [Cubit](http://www.cis.upenn.edu/~lhuang3/cubit/) is a very simple phrase-based decoder (Python)
  * [SRILM](http://www.speech.sri.com/projects/srilm/) is SRI’s language modeling toolkit (C++)
  * [KenLM](http://kheafield.com/code/kenlm/) is a highly optimized library for representing and querying $n$-gram language models (C++)
  * [BerkeleyLM](http://code.google.com/p/berkeleylm/) is another $n$-gram language model library (Java)
