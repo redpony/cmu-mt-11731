@@ -6,7 +6,10 @@ title: Leaderboard
 
 This page contains the assignment leaderboard. The leaderboard is updated as follows: every five minutes, every assignment not yet past its due date is downloaded from the git repository you provided in [Homework 0](hw0.html), and the output is rescored if it has changed.
 
-<table>
+<script src="homework.js">
+</script>
+
+<table id="leaderboard">
   <thead style="background-color: lightgrey">
     <tr>
       <th colspan="3"></th>
@@ -24,7 +27,7 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
       <th valign="top">
         <a href="hw0.html">#0</a>
       </th>
-      <!--<th valign="top">
+      <th valign="top">
         <a href="hw1.html">#1</a><br/>
         <span class="small">AER</span>
       </th>
@@ -39,11 +42,12 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
       <th valign="top">
         <a href="hw4.html">#4</a><br/>
         <span class="small">BLEU</span>
-      </th>-->
+      </th>
     </tr>
   </thead>
-  <tbody>
+  <tbody id="scorediv">
   </tbody>
 </table>
 
-
+<script src="leaderboard.js">
+</script>
