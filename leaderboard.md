@@ -29,11 +29,11 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
         <span class="small">AER</span>
       </th>
       <th valign="top">
-        <a href="hw2.html">#3</a><br/>
-        <span class="small"><a href="http://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient">Spearman's</a></span>
+        <a href="hw2.html">#2</a><br/>
+        <span class="small">Accuracy</span>
       </th>
       <th valign="top">
-        <a href="hw3.html">#2</a><br/>
+        <a href="hw3.html">#3</a><br/>
         <span class="small">model score</span>
       </th>
       <th valign="top">
