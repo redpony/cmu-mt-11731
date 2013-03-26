@@ -1,6 +1,10 @@
 ---
-title: Morphology in MT
-slides: 16.morphology.pdf
+title: Synchronous Parsing
+slides: 16.biparse.pdf
 day: 16
 reading:
+  -
+    title: Two monolingual parses are better than one (synchronous parse)
+    author: Dyer
+    url: http://www.aclweb.org/anthology/N/N10/N10-1033.pdf
 ---
