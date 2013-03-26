@@ -1,6 +1,10 @@
 ---
-title: Semantics
-slides: 17.semantics.pdf
+title: Large Scale Language Modeling
+slides: 17.llms.pdf
 day: 17
 reading:
+  -
+    title: Smoothed Bloom ﬁlter language models; Tera-Scale LMs on the Cheap
+    author: Talbot and Osborne
+    url: http://acl.ldc.upenn.edu/D/D07/D07-1049.pdf
 ---
