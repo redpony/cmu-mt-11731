@@ -1,0 +1,6 @@
+---
+title: Bitext++
+slides: 27.bitext.pdf
+day: 27
+reading:
+---

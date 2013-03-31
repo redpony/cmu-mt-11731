@@ -1,0 +1,6 @@
+---
+title: Quality Estimation
+slides: 24.qe.pdf
+day: 24
+reading:
+---
