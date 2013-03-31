@@ -37,6 +37,9 @@ Welcome to Machine Translation (11-731). This 12-credit graduate course will pro
       {{ post.title }} <br />
       {% if post.slides %}
       <a href="slides/{{ post.slides }}">[pdf]</a> <br />
+      {% if post.lecturer %}
+        Lecturer: {{post.lecturer}} <br />
+      {% endif %}
       {% if post.otherstuff %}
         {% for otherstuff in post.otherstuff %}
           <a href="{{ otherstuff.url }}">[{{ otherstuff.name }}]</a>

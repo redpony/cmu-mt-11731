@@ -1,0 +1,6 @@
+---
+title: Nizar Habash talk (GHC 6105)
+slides:
+day: 21
+reading:
+---

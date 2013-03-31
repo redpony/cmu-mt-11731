@@ -1,0 +1,6 @@
+---
+title: Commercial MT
+slides: 26.commercial.pdf
+day: 26
+reading:
+---

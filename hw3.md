@@ -16,7 +16,7 @@ and finding the best translation into a target language, according to a model:
 <center><i>clearly , the second option is preferable</i></center>
 <br />
 
-<b>Your task is to find the most probable translation, given the Spanish input, the translation likelihood model, and the English language model.</b> We assume the traditional noisy channel decomposition:
+**Your task is to find the most probable translation, given the Spanish input, the translation likelihood model, and the English language model.** We assume the traditional noisy channel decomposition:
 $$\begin{align\*}
 \textbf{e}^* &= \arg \max_{\textbf{e}} p(\textbf{e} \mid \textbf{f}) \\\\
  &= \arg \max_{\textbf{e}} \frac{p_{\textrm{TM}}(\textbf{f} \mid \textbf{e}) \times p_{\textrm{LM}}(\textbf{e})}{p(\textbf{f})} \\\\

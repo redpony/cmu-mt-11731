@@ -1,0 +1,7 @@
+---
+title: Example-Based MT
+slides: 22.ebmt.pdf
+day: 22
+lecturer: Ralf Brown
+reading:
+---

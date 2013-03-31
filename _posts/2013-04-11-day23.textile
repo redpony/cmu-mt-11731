@@ -1,0 +1,7 @@
+---
+title: Mining Parallel Data
+slides: 23.mining.pdf
+day: 23
+reading:
+lecturer: Wang Ling
+---
