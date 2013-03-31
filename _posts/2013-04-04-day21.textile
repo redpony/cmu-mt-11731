@@ -3,4 +3,16 @@ title: Nizar Habash talk (GHC 6105)
 slides:
 day: 21
 reading:
+  -
+    title: Dialectal to Standard Arabic Paraphrasing to Improve Arabic-English Statistical Machine Translation
+    author: Salloum and Habash
+    url: http://www.mt-archive.info/EMNLP-2011-Salloum.pdf
+  -
+    title: Orthographic and morphological processing for English–Arabic statistical machine translation
+    author: El Kohly and Habash
+    url: http://link.springer.com/article/10.1007/s10590-011-9110-0
+  -
+    title: Arabic Preprocessing Schemes for Statistical Machine Translation
+    author: Habash and Sadat
+    url: http://www.mt-archive.info/HLT-NAACL-2006-Habash.pdf
 ---
