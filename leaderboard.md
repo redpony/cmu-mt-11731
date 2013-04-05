@@ -38,7 +38,7 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
       </th>
       <th valign="top">
         <a href="hw4.html">#4</a><br/>
-        <span class="small">BLEU</span>
+        <span class="small">METEOR</span>
       </th>-->
     </tr>
   </thead>
