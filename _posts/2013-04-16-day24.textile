@@ -3,4 +3,12 @@ title: Quality Estimation
 slides: 24.qe.pdf
 day: 24
 reading:
+  -
+    url: http://statmt.org/wmt12/pdf/WMT18.pdf
+    author: Soricut et al.
+    title: The SDL Language Weaver Systems in the WMT12 Quality Estimation Shared Task
+  -
+    url: http://statmt.org/wmt12/pdf/WMT02.pdf
+    author: Callison-Burch et al.
+    title: Findings of the 2012 Workshop on Statistical Machine Translation
 ---
