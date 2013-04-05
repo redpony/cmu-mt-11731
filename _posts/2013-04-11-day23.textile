@@ -2,6 +2,14 @@
 title: Mining Parallel Data
 slides: 23.mining.pdf
 day: 23
-reading:
 lecturer: Wang Ling
+reading:
+  -
+    url: http://acl.ldc.upenn.edu/J/J03/J03-3002.pdf
+    title: The Web as a Parallel Corpus
+    author: Resnik and Smith
+  -
+    url: http://www.aclweb.org/anthology-new/C/C10/C10-1124.pdf
+    title: Large Scale Parallel Document Mining for Machine Translation
+    author: Uszkoreit et al.
 ---
