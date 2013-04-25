@@ -3,4 +3,16 @@ title: Bitext++
 slides: 27.bitext.pdf
 day: 27
 reading:
+  -
+    title: Bootstrapping parsers via syntactic projection across parallel texts
+    author: Hwa et al.
+    url: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.80.4033
+  -
+    title: Paraphrasing with bilingual parallel corpora
+    author: Bannard and Callison-Burch
+    url: http://www.cs.jhu.edu/~ccb/publications/paraphrasing-with-bilingual-parallel-corpora.pdf
+  -
+    title: Supersense tagging for Arabic; the MT-in-the-middle attack
+    author: Schneider et al.
+    url: http://www.cs.cmu.edu/~nschneid/asst-mt.pdf
 ---
