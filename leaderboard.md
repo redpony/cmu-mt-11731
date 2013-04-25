@@ -41,12 +41,18 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
       </th>
       <th valign="top">
         <a href="hw4.html">#4</a><br/>
-        <span class="small">BLEU</span>
+        <span class="small">METEOR</span>
       </th>
     </tr>
   </thead>
   <tbody id="scorediv">
   </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="8" align="center" id="updatedDiv" style="background-color: lightgrey">
+      </td>
+    </tr>
+  </tfoot>
 </table>
 
 <script src="leaderboard.js">
