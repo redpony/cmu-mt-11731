@@ -6,15 +6,15 @@ title: Overview
 
 ## At a Glance
 
- * **Instructor**: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) | GHC 5707 | Mondays 11–12
+ * **Instructor**: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) | GHC 5707 | Mondays 3–4
  * **Instructor**: [Alon Lavie](http://www.cs.cmu.edu/~alavie) | GHC 5713 | By appointment
- * **TA**: [Wang Ling](http://www.cs.cmu.edu/~lingwang/) | GHC 5503 | Tuesdays 10–11
- * **Location**: [NSH 1305](http://www.cs.cmu.edu/~help/AV-Help/AV-Rooms/NSH1305.html)
+ * **TA**: [Yulia Tsvetkov](http://scholar.google.com/citations?user=SEDPkrsAAAAJ) | GHC | TBD
+ * **Location**: [Doherty Hall 2122](http://www.cmu.edu/computing/class-event/classrooms/doherty/2122.html)
  * **Time**: Tuesday/Thursday 1:30–2:50
  * **Textbook**: Philipp Koehn, *Statistical Machine Translation* | [Publisher](https://www.cambridge.org/us/catalogue/catalogue.asp?isbn=9780521874151) | [Amazon](http://www.amazon.com/dp/0521874157) | [Errata](http://www.statmt.org/book/errata.html)
- * **Prerequisites**: Algorithms for NLP, Machine learning
- * **Piazza**: [discussion board](https://piazza.com/cmu/spring2013/11731/home)
- * **GitHub**: [course repository](https://github.com/clab/sp2013.11-731)
+ * **Prerequisites**: Algorithms for NLP, Machine learning, or permission from instructor
+ * **Piazza**: [discussion board](https://piazza.com/cmu/spring2014/11731/home)
+ * **GitHub**: [course repository](https://github.com/clab/sp2014.11-731)
 
 ## Overview
 
@@ -74,7 +74,7 @@ Welcome to Machine Translation (11-731). This 12-credit graduate course will pro
 
 This semester we will be using Piazza for class discussion. The system is designed to get you help fast and efficiently from classmates, Wang, Alon, and me. *Rather than emailing questions to the instructors, we encourage you to post your questions on [Piazza](https://piazza.com/cmu/spring2013/11731/home)*. It supports LaTeX for equations, syntax highlighting for code and keeps all materials related to the course in one place.
 
-[Find our class page here.](https://piazza.com/cmu/spring2013/11731/home)
+[Find our class page here.](https://piazza.com/cmu/spring2014/11731/home)
 
 ## Software
 

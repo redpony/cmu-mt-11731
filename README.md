@@ -3,5 +3,5 @@
 
 Machine Translation (11-731)
 
-Spring 2013
+Spring 2014
 

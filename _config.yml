@@ -1,3 +1,4 @@
 auto:       true
+baseurl: /sp2014-11731
 permalink:  /:categories/:year-:month-:day/:title
 pygments:   true

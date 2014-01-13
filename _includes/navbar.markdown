@@ -1,7 +1,7 @@
 {% capture stuff %}
 
 #<a href="{{site.baseurl}}" id="home">Machine Translation</a>
-### 11-731 | Spring 2013
+### 11-731 | Spring 2014
 
 [**Syllabus**]({{site.baseurl}}/#syllabus) <br />
 [**Grading**]({{site.baseurl}}/grading.html) <br />
