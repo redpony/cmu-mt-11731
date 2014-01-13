@@ -1,0 +1,22 @@
+---
+title: Quality Estimation
+slides: 24.qe.pdf
+day: 24
+reading:
+  -
+    url: http://clg.wlv.ac.uk/papers/speciaetal.pdf
+    title: Predicting Machine Translation Adequacy
+    author: Specia et al.
+  -
+    url: http://clg.wlv.ac.uk/papers/specia_jimenez_amta2010.pdf
+    author: Specia and Giménez
+    title: Combining Conﬁdence Estimation and Reference-based Metrics for Segment-level MT Evaluation
+  -
+    url: http://statmt.org/wmt12/pdf/WMT18.pdf
+    author: Soricut et al.
+    title: The SDL Language Weaver Systems in the WMT12 Quality Estimation Shared Task
+  -
+    url: http://statmt.org/wmt12/pdf/WMT02.pdf
+    author: Callison-Burch et al.
+    title: Findings of the 2012 Workshop on Statistical Machine Translation
+---

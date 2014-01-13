@@ -1,0 +1,10 @@
+---
+title: Commercial MT
+slides: 26.commercial.pdf
+day: 26
+reading:
+  -
+    url: http://amta2012.amtaweb.org/AMTA2012Files/start.htm
+    title: AMTA Commercial MT Proceedings
+    author: Many
+---

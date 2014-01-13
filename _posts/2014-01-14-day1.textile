@@ -1,0 +1,15 @@
+---
+title: Introduction
+slides: 01.intro.pdf
+day: 1
+book: 1
+reading:
+  -
+    author: Knight
+    title: Automating Knowledge Acquisition for Machine Translation
+    url: http://www.isi.edu/natural-language/mt/aimag97.pdf
+  -
+    author: Weaver
+    title: Translation
+    url: http://www.mt-archive.info/Weaver-1949.pdf
+---

@@ -1,0 +1,22 @@
+---
+title: Morphology in MT II
+slides: 19.morph2.pdf
+day: 19
+reading:
+  -
+    title: Factored Translation Models
+    author: Koehn and Hoang
+    url: http://acl.ldc.upenn.edu/D/D07/D07-1091.pdf
+  -
+    title: Syntax-to-Morphology Mapping in Factored Phrase-Based Statistical Machine Translation from English to Turkish
+    author: Yeniterzi and Oflazer
+    url: http://aclweb.org/anthology-new/P/P10/P10-1047.pdf
+  -
+    title: Modeling Inﬂection and Word-Formation in SMT
+    author: Fraser et al.
+    url: http://www.ims.uni-stuttgart.de/~fraser/pubs/fraser_eacl2012.pdf
+  -
+    title: Genralizing Word Lattice Translation
+    author: Dyer et al.
+    url: http://aclweb.org/anthology-new/P/P08/P08-1115.pdf
+---

@@ -1,0 +1,26 @@
+---
+title: Syntax in MT II
+slides: 14.syntax2.pdf
+day: 14
+reading:
+  -
+    title: What’s in a translation rule?
+    author: Galley et al.
+    url: http://www.isi.edu/~marcu/papers/cr_ghkm_naacl04.pdf
+  -
+    title: Scalable inference and training of context-rich syntactic translation models
+    author: Galley et al.
+    url: http://acl.ldc.upenn.edu/P/P06/P06-1121.pdf
+  -
+    author: Zollmann and Venugopal 
+    title: Syntax augmented machine translation via chart parsing
+    url: http://www.cs.cmu.edu/~zollmann/publications/wmt06samt.pdf
+  -
+    author: Ambati et al.
+    title: Extraction of Syntactic Translation Models from Parallel Data using Syntax from Source and Target Languages
+    url: http://www.mt-archive.info/MTS-2009-Ambati.pdf
+  -
+    author: Hanneman et al.
+    title: A General-Purpose Rule Extractor for SCFG-Based Machine Translation
+    url: http://www.cs.cmu.edu/~ghannema/SSST-2011-RuleExtractor.pdf
+---

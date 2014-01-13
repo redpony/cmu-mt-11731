@@ -1,0 +1,24 @@
+---
+title: Lexical Translation Models II
+slides: 05.lexical2.pdf
+day: 5
+book: 4.4, 4.6
+language-in-10: Latin
+reading:
+  -
+    author: Brown et al.
+    title: The Mathematics of Statistical Machine Translation; Parameter Estimation
+    url: http://aclweb.org/anthology-new/J/J93/J93-2003.pdf
+  -
+    author: Vogel and Ney
+    title: HMM-based word alignment in statistical translation
+    url: http://aclweb.org/anthology-new/C/C96/C96-2141.pdf
+  -
+    author: Dyer et al.
+    title: Unsupervised Word Alignment with Arbitrary Features
+    url: http://www.aclweb.org/anthology/P/P11/P11-1042.pdf
+  -
+    author: Yamada and Knight
+    title: A Syntax-based Statistical Translation Model
+    url: http://acl.ldc.upenn.edu/P/P01/P01-1067.pdf
+---
