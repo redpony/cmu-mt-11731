@@ -8,7 +8,7 @@ title: Overview
 
  * **Instructor**: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) | GHC 5707 | Mondays 3–4
  * **Instructor**: [Alon Lavie](http://www.cs.cmu.edu/~alavie) | GHC 5713 | By appointment
- * **TA**: [Yulia Tsvetkov](http://scholar.google.com/citations?user=SEDPkrsAAAAJ) | GHC | TBD
+ * **TA**: [Yulia Tsvetkov](http://scholar.google.com/citations?user=SEDPkrsAAAAJ) | GHC 6405 | Tuesdays 3–4
  * **Location**: [Doherty Hall 2122](http://www.cmu.edu/computing/class-event/classrooms/doherty/2122.html)
  * **Time**: Tuesday/Thursday 1:30–2:50
  * **Textbook**: Philipp Koehn, *Statistical Machine Translation* | [Publisher](https://www.cambridge.org/us/catalogue/catalogue.asp?isbn=9780521874151) | [Amazon](http://www.amazon.com/dp/0521874157) | [Errata](http://www.statmt.org/book/errata.html)
@@ -72,7 +72,7 @@ Welcome to Machine Translation (11-731). This 12-credit graduate course will pro
 
 ## Piazza
 
-This semester we will be using Piazza for class discussion. The system is designed to get you help fast and efficiently from classmates, Wang, Alon, and me. *Rather than emailing questions to the instructors, we encourage you to post your questions on [Piazza](https://piazza.com/cmu/spring2013/11731/home)*. It supports LaTeX for equations, syntax highlighting for code and keeps all materials related to the course in one place.
+This semester we will be using Piazza for class discussion. The system is designed to get you help fast and efficiently from classmates, Wang, Alon, and me. *Rather than emailing questions to the instructors, we encourage you to post your questions on [Piazza](https://piazza.com/cmu/spring2014/11731/home)*. It supports LaTeX for equations, syntax highlighting for code and keeps all materials related to the course in one place.
 
 [Find our class page here.](https://piazza.com/cmu/spring2014/11731/home)
 
