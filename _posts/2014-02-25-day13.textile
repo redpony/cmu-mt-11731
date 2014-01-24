@@ -2,6 +2,7 @@
 title: Syntax in MT I
 slides: 13.syntax1.pdf
 day: 13
+language-in-10: Esperanto
 reading:
   -
     title: Stochastic Inversion Transduction Grammars and Bilingual Parsing of Parallel Corpora

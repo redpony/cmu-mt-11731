@@ -1,9 +1,29 @@
-var lastUpdated = "12:00 13/3/2014";
+var lastUpdated = "21:12 Jan 23, 2014";
 var homework = {
 
- "baseline": new Array( 10, 0.0, 0.0, 0.0, 0.0)
+ "cecilia": new Array( 18, -1, -1, -1, -1)
 ,
- "oracle": new Array( 8, 0.0, 0.0, 0.0, 0.0)
+ "PlRyding": new Array( 36, -1, -1, -1, -1)
 ,
- "default": new Array( 9, 0.0, 0.0, 0.0, 0.0)
+ "cmuak": new Array( 21, -1, -1, -1, -1)
+,
+ "dbmikus": new Array( 18, -1, -1, -1, -1)
+,
+ "jdoornbos": new Array( 22, -1, -1, -1, -1)
+,
+ "delbrokendel": new Array( 38, -1, -1, -1, -1)
+,
+ "sammthomson": new Array( 26, -1, -1, -1, -1)
+,
+ "LBJ": new Array( 10, -1, -1, -1, -1)
+,
+ "ProfDyer": new Array( 20, -1, -1, -1, -1)
+,
+ "pdasigi": new Array( 27, -1, -1, -1, -1)
+,
+ "Juggernaut": new Array( 48, -1, -1, -1, -1)
+,
+ "drayson": new Array( 18, -1, -1, -1, -1)
+,
+ "Anna": new Array( 12, -1, -1, -1, -1)
 }

@@ -2,7 +2,6 @@
 title: Noisy Channel Translation
 slides: 06.noisy.pdf
 day: 6
-language-in-10: Mandarin
 reading:
   -
     author: Norvig
