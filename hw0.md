@@ -4,7 +4,7 @@ title: Homework 0
 ---
 # Homework 0
 
-**Due 11:59pm on Sunday, Jan. 19, 2014**
+**Due 11:59pm on Sunday, Jan. 19, 2014.**
 
 This course has four homework assignments (not including this one) which are competitive, but which will be done in the open so you have the opportunity to learn from each other. This preliminary assignment will help you get the required development environment set up.
 
