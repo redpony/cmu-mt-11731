@@ -10,11 +10,11 @@ Word alignment is a fundamental task in statistical machine translation. This ho
 
 ## Getting started
 
-Go to your clone of your course GitHub repository on the machine where you will be doing this assignment, and run the following command to obain the code and data you will need:
+Go to your clone of your course GitHub repository on the machine where you will be doing this assignment. Run the following command to obain the code and data you will need:
 
-    ./tools/get-new-assignments
+    git pull --no-edit git@github.com:clab/sp2014.11-731.git master
 
-You will obtain a very simple heuristic aligner written in Python and 100,000 German-English parallel sentences from the [Europarl corpus](http://www.statmt.org/europarl/), version 7. The heuristic aligner uses *set similarity* to determine which words are aligned to each other in a corpus of parallel sentences. The set similarity measure we use is [Dice's coefficient](http://en.wikipedia.org/wiki/Dice's_coefficient), defined in terms of sets $X$ and $Y$ as follows:
+In the new `hw1/` subdirectory, you will find a word-aligner written in Python, along with 100,000 German-English parallel sentences from the [Europarl corpus](http://www.statmt.org/europarl/) (version 7). This aligner uses *set similarity* to determine which words are aligned to each other in a corpus of parallel sentences. The set similarity measure we use is [Dice's coefficient](http://en.wikipedia.org/wiki/Dice's_coefficient), defined in terms of sets $X$ and $Y$ as follows:
 
 $$D(X,Y) = \frac{2 \times |X \cap Y|}{|X| + |Y|}$$
 
