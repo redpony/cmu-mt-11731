@@ -22,7 +22,7 @@ Dice's coefficient ranges in value from $0$ to $1$.
 
 How do we use set siilarity to align words? The intuition is that if you look at the set of sentence pairs from a parallel corpus that contain an English word $e$, and that set is similar to the set of sentence pairs that contain a German word $g$, then these words are likely to be translations of each other.
 
-Formally, every pair of word types $(e,g)$ in the parallel corpus receives a Dice "score" $\delta(e,g)$. The alignment algorithm then goes through all pairs of sentences $(\textbf{e},textbf{g})$ and predicts that English word $e_i$ is aligned to German word $g_j$ if $\delta(e_i,g_j) > \tau$. By making $\tau$ closer to $1$, fewer points are aligned but with higher precision; by making it closer to $0$, more points are aligned, probably improving recall. By default, the aligner code we have provided you uses $\tau = 0.5$ as its threshold.
+Formally, every pair of word types $(e,g)$ in the parallel corpus receives a Dice "score" $\delta(e,g)$. The alignment algorithm then goes through all pairs of sentences $(\textbf{e},\textbf{g})$ and predicts that English word $e_i$ is aligned to German word $g_j$ if $\delta(e_i,g_j) > \tau$. By making $\tau$ closer to $1$, fewer points are aligned but with higher precision; by making it closer to $0$, more points are aligned, probably improving recall. By default, the aligner code we have provided you uses $\tau = 0.5$ as its threshold.
 
 Run the baseline heuristic model 1,000 sentences using the command:
 
