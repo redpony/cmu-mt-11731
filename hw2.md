@@ -50,7 +50,7 @@ To solve this problem we are going to use a [learning to rank](http://en.wikiped
 
 We will parameterize the evaluation function $f$ using a $d$-dimensional feature function vector $\boldsymbol{\phi}(\textbf{h},\textbf{r}) \mapsto \mathbb{R}^d$ that computes features of an input/hypothesis pair, and a $d$-dimensional weight vector. The evaluation function $f(\textbf{h},\textbf{r})$ is defined to be $\boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h},\textbf{r})$.
 
-To set the parameters, we will provide you with a set of training data: human judgements of translation quality. In particular, we will provide judgements about *pairs* of translation hypotheses, given a reference. Annotators had three options: $\textbf{h}_1 < \textbf{h}_2$, $\textbf{h}_1 \approx \textbf{h}_2$, or $\textbf{h}_1 > \textbf{h}_2$. We designate these outcomes $y=\\{1,2,3\\}$, respectively.
+To set the parameters, we will provide you with a set of training data: human judgements of translation quality. In particular, we will provide judgements about *pairs* of translation hypotheses, given a reference. Annotators had three options: $\textbf{h}_1 < \textbf{h}_2$, $\textbf{h}_1 \approx \textbf{h}_2$, or $\textbf{h}_1 > \textbf{h}_2$. We designate these outcomes $y=\\{-1,0,1\\}$, respectively.
 
 We will relate between translation function score $f = \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h},\textbf{r})$ and the judgements using the following model:
 
@@ -59,9 +59,9 @@ Z &= f(\textbf{h}_1, \textbf{r}) - f(\textbf{h}_2, \textbf{r}) \\\\
  &= \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) - \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) \\\\
  &= \boldsymbol{w}^{\top} \left( \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) - \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) \right) \\\\
 Y &= \begin{cases}
-1 & \textrm{if }Z \in (-\infty,\alpha_1] \\\\
-2 & \textrm{if }Z \in (\alpha_1,\alpha_2] \\\\
-3 & \textrm{if }Z \in (\alpha_2,+\infty)
+1 & \textrm{if }Z \in (-\infty,\alpha_0] \\\\
+2 & \textrm{if }Z \in (\alpha_0,\alpha_1] \\\\
+3 & \textrm{if }Z \in (\alpha_1,+\infty)
 \end{cases} \\\\
 p(Y \le j \mid \textbf{h}_1, \textbf{h}_2, \textbf{r}) &= \mathrm{logit}(\alpha_{j-1} - \boldsymbol{w}^{\top}\left( \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) - \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) \right))
 \end{align\*}$$
