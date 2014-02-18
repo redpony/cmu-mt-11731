@@ -4,13 +4,13 @@ title: Homework 2
 ---
 # Homework 2
 
-**Due 11:59pm on Tuesday, Mar. 6, 2014 (Thursday before Spring Break)**
+**Due 11:59pm on Thursday, Mar. 6, 2014 (Thursday before Spring Break)**
 
 Automatic evaluation of machine translation output relative to a human-generated reference translation (or, if available, a *set* of reference translations) is a core challenge in machine translation. Not only are such evaluation measures useful for determining whether a change to an MT system improved or degraded its performance, being able to solve the translation evaluation problem provides a simpler version of the translation problem itself: an effective evaluation measure must determine if a hypothesis is **fluent** and if it has the same **meaning** as the reference. These roughly correspond to the language model and translation model in the noisy channel decomposition of the translation problem we talked about. As such, studying evaluation is a way of studying the translation problem.
 
 Additionally, as we will see later in the semester, automatic MT evaluation plays a central role in learning the parameters of a translation model. An evaluation measure can be used to assign "partial credit" to translations produced by the MT system that do not precisely match the provided reference translation. This partial credit enable more robust discriminative learning from fewer training instances.
 
-## Research Question: Morphologically Rich Languages
+## Research Question: Evaluating Morphologically Rich Languages
 
 Automatic evaluation is by no means a solved problem. In particular, evaluating translations into **morphologically rich languages (MRLs)** is an open research question. MRLs have productive word formation processes that build new words out of a smaller inventory of underlying morphemes. While all languages can form new words, MRL create words with a higher frequency using regular rules, and they often express grammatical relations or semantic properties that would be expressed using word order or independent lexical items in morphologically simpler languages, such as English or Mandarin. As a result, a translation into a MRL will generally have a higher density of singleton words than a translation into a morphologically simple language. Since evaluation metrics generally work by matching tokens between source and reference translations, they are less reliable signal on morphologically rich languages since even very similar translations may use different word types, due to morphological variation.
 
