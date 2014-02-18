@@ -4,7 +4,7 @@ title: Homework 2
 ---
 # Homework 2
 
-**Due 11:59pm on Tuesday, Mar. 5, 2013**
+**Due 11:59pm on Tuesday, Mar. 6, 2014 (Thursday before Spring Break)**
 
 Automatic evaluation of machine translation output relative to a human-generated reference translation (or, if available, a *set* of reference translations) is a core challenge in machine translation. Not only are such evaluation measures useful for determining whether a change to an MT system improved or degraded its performance, being able to solve the translation evaluation problem provides a simpler version of the translation problem itself: an effective evaluation measure must determine if a hypothesis is **fluent** and if it has the same **meaning** as the reference. These roughly correspond to the language model and translation model in the noisy channel decomposition of the translation problem we talked about. As such, studying evaluation is a way of studying the translation problem.
 
