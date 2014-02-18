@@ -16,7 +16,7 @@ Automatic evaluation is by no means a solved problem. In particular, evaluating 
 
 We focus on the evaluation of English$\rightarrow$Czech translations in this homework (although you are welcome to develop evaluation tools that are not language specific). We have chosen Czech because it exhibits considerable inflectional complexity (every verb, noun, and adjective may have dozens or hundreds of inflected forms), none of you speak it as a native language (so no one has an unfair advantage!), and because there are a large number of human judgments of actual translation outputs. We will use these human judgements to evaluate the quality of your automatic evaluation systems and provide some data to you to learn from.
 
-**This assignment is an opportunity for a publication.** The 2014 Workshop on Machine Translation, which will be held in conjunction with ACL this summer, is holding a shared task (a bake-off for MT researchers) on the challenge of developing new machine translation metrics. These will be evaluated relative to human judgements of system quality. We will be participating in this task by combining the predictions made by each of the system
+**This assignment is an opportunity for a publication.** The 2014 Workshop on Machine Translation, which will be held in conjunction with ACL this summer, is holding a shared task (a bake-off for MT researchers) on the challenge of developing new machine translation metrics. These will be evaluated relative to human judgements of system quality. We will be participating in this task by combining **all of the features you develop in metric whose weights are learned in a learning-to-rank framework**.
 
 ## Getting started
 
@@ -55,7 +55,8 @@ To set the parameters, we will provide you with a set of training data: human ju
 We will relate between translation function score $f = \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h},\textbf{r})$ and the judgements using the following model:
 
 $$\begin{align\*}
-Z &= \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) - \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) \\\\
+Z &= f(\textbf{h}_1, \textbf{r}) - f(\textbf{h}_2, \textbf{r}) \\\\
+ &= \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) - \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) \\\\
  &= \boldsymbol{w}^{\top} \left( \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) - \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) \right) \\\\
 Y &= \begin{cases}
 1 & \textrm{if }Z \in (-\infty,\alpha_1] \\\\
