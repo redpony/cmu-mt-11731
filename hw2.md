@@ -48,11 +48,11 @@ We would hope that our automatic evaluation function $f$ would have the property
 
 To solve this problem we are going to use a [learning to rank](http://en.wikipedia.org/wiki/Learning_to_rank) framework based on a [proportional odds model](http://en.wikipedia.org/wiki/Ordered_logit) where we provide you with *pairwise ranking judgements* for two translation alternatives for a single source sentence, a maximum likelihood learning algorithm, and your job is to develop features that will generalize well to held-out data ([another write-up about the proportional odds model](http://www.stat.uchicago.edu/~pmcc/reports/prop_odds.pdf)).
 
-We will parameterize the evaluation function $f$ using a $d$-dimensional feature function vector $\boldsymbol{\phi}(\textbf{h},\textbf{r}) \mapsto \mathbb{R}^d$ that computes features of an input/hypothesis pair, a $d$-dimensional weight vector. The evaluation function $f(\textbf{h},\textbf{r})$ is defined to be $\boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h},\textbf{r})$.
+We will parameterize the evaluation function $f$ using a $d$-dimensional feature function vector $\boldsymbol{\phi}(\textbf{h},\textbf{r}) \mapsto \mathbb{R}^d$ that computes features of an input/hypothesis pair, and a $d$-dimensional weight vector. The evaluation function $f(\textbf{h},\textbf{r})$ is defined to be $\boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h},\textbf{r})$.
 
 To set the parameters, we will provide you with a set of training data: human judgements of translation quality. In particular, we will provide judgements about *pairs* of translation hypotheses, given a reference. Annotators had three options: $\textbf{h}_1 < \textbf{h}_2$, $\textbf{h}_1 \approx \textbf{h}_2$, or $\textbf{h}_1 > \textbf{h}_2$. We designate these outcomes $y=\\{1,2,3\\}$, respectively.
 
-We will relate between translation function score $f$ and the judgements using the following model.
+We will relate between translation function score $f = \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h},\textbf{r})$ and the judgements using the following model:
 
 $$\begin{align\*}
 Z &= \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) - \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) \\\\
