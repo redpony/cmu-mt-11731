@@ -104,6 +104,8 @@ This is a very simple baseline to implement, and we are particularly ethusiastic
  * Use unsupervised morphology (here's [one tool](https://github.com/vchahun/fast_umorph), here's [another](https://pypi.python.org/pypi/Morfessor)) to split complex words into simpler pieces.
  * Use an $n$-gram language model to better assess fluency
  * Develop a single-sentence variant of [BLEU](http://acl.ldc.upenn.edu/P/P02/P02-1040.pdf)
+ * Use [vector space representations of words](http://www.jair.org/media/2934/live-2934-4846-jair.pdf) to assess semantic similarity.
+ * Use [vector space representations of sentences](http://nlp.stanford.edu/pubs/SocherHuangPenningtonNgManning_NIPS2011.pdf) to assess semantic similarity.
  * Use a dependency parser to assess syntactic wellformedness ([paper](http://ssli.ee.washington.edu/people/jgk/dist/metaweb/mtjournal.pdf))
  * See what evaluation measures other people have implemented ([paper](http://www.statmt.org/wmt10/pdf/wmt10-overview.pdf))
 
