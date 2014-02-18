@@ -127,4 +127,4 @@ You should feel free to use additional data resources such as thesauruses, WordN
 
 ## Acknowledgements
 
-This assignment has been done in the past in the course developed by [Adam Lopez, Chris Callison-Burch, and Matt Post](http://mt-class.org/hw3.html).
+This assignment is inspired by an assignment given in the course developed by [Adam Lopez, Chris Callison-Burch, and Matt Post](http://mt-class.org/hw3.html).
