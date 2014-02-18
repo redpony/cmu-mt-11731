@@ -59,11 +59,11 @@ Z &= f(\textbf{h}_2, \textbf{r}) - f(\textbf{h}_1, \textbf{r}) \\\\
  &= \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) - \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) \\\\
  &= \boldsymbol{w}^{\top} \left( \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) - \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) \right) \\\\
 Y &= \begin{cases}
-1 & \textrm{if }Z \in (-\infty,\alpha_0] \\\\
-2 & \textrm{if }Z \in (\alpha_0,\alpha_1] \\\\
-3 & \textrm{if }Z \in (\alpha_1,+\infty)
+-1 & \textrm{if }Z \in (-\infty,\alpha_0] \\\\
+0 & \textrm{if }Z \in (\alpha_0,\alpha_1] \\\\
+1 & \textrm{if }Z \in (\alpha_1,+\infty)
 \end{cases} \\\\
-p(Y \le j \mid \textbf{h}_1, \textbf{h}_2, \textbf{r}) &= \mathrm{logit}(\alpha_{j-1} - \boldsymbol{w}^{\top}\left( \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) - \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) \right))
+p(Y < j \mid \textbf{h}_1, \textbf{h}_2, \textbf{r}) &= \mathrm{logit}(\alpha_{j-1} - \boldsymbol{w}^{\top}\left( \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) - \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) \right))
 \end{align\*}$$
 
 In this model, the intercepts $-\infty < \alpha_0 < \alpha_1 < \infty$ that indicate where the boundaries between the ranking ordering categories lie. We provide code to learn the weights $(\boldsymbol{w},\alpha_0,\alpha_1)$ given a set of pairwise judgements so as to maximize the likelihood according to the above model. We encourage you to use this code, but you are welcome to devise another learning-to-rank algorithm.
