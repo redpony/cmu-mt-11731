@@ -80,7 +80,7 @@ For each line, you will extract a *feature map* of the following form:
     {"Feature1":1.0, "SomeOtherFeature":-9.8}
     {"Feature2":-0.5, "Feature1":2.2}
 
-It's as simple as that! There is a baseline feature extractor called `./extract` and code to fit the data. **Note:** You will need to install the [`creg` regression package](https://github.com/redpony/creg) to run the fitting code. This will require installing the [Boost C++ libraries](http://www.boost.org/) or using a machine where they are installed.
+It's as simple as that! There is a baseline feature extractor called `./extract` and code to fit the data. **Note:** You will need to install the [`creg` regression package](https://github.com/redpony/creg) to run the fitting code, [download the source tarball](http://demo.clab.cs.cmu.edu/cdec/creg-2014-02-18.tar.gz). Building `creg` will require installing the [Boost C++ libraries](http://www.boost.org/) or using a machine where they are installed.
 
     ./extract | ./fit --l2 1.0 > simple.weights
 
