@@ -55,24 +55,32 @@ To set the parameters, we will provide you with a set of training data: human ju
 We will relate between translation function score $f = \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h},\textbf{r})$ and the judgements using the following model:
 
 $$\begin{align\*}
-Z &= f(\textbf{h}_1, \textbf{r}) - f(\textbf{h}_2, \textbf{r}) \\\\
- &= \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) - \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) \\\\
- &= \boldsymbol{w}^{\top} \left( \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) - \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) \right) \\\\
+Z &= f(\textbf{h}_2, \textbf{r}) - f(\textbf{h}_1, \textbf{r}) \\\\
+ &= \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) - \boldsymbol{w}^{\top} \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) \\\\
+ &= \boldsymbol{w}^{\top} \left( \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) - \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) \right) \\\\
 Y &= \begin{cases}
 1 & \textrm{if }Z \in (-\infty,\alpha_0] \\\\
 2 & \textrm{if }Z \in (\alpha_0,\alpha_1] \\\\
 3 & \textrm{if }Z \in (\alpha_1,+\infty)
 \end{cases} \\\\
-p(Y \le j \mid \textbf{h}_1, \textbf{h}_2, \textbf{r}) &= \mathrm{logit}(\alpha_{j-1} - \boldsymbol{w}^{\top}\left( \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) - \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) \right))
+p(Y \le j \mid \textbf{h}_1, \textbf{h}_2, \textbf{r}) &= \mathrm{logit}(\alpha_{j-1} - \boldsymbol{w}^{\top}\left( \boldsymbol{\phi}(\textbf{h}_2,\textbf{r}) - \boldsymbol{\phi}(\textbf{h}_1,\textbf{r}) \right))
 \end{align\*}$$
 
 In this model, the intercepts $-\infty < \alpha_0 < \alpha_1 < \infty$ that indicate where the boundaries between the ranking ordering categories lie. We provide code to learn the weights $(\boldsymbol{w},\alpha_0,\alpha_1)$ given a set of pairwise judgements so as to maximize the likelihood according to the above model. We encourage you to use this code, but you are welcome to devise another learning-to-rank algorithm.
 
 ## Feature Engineering
 
-Your task will be to extract features from pairs of references $(\textbf{h},\textbf{r})$ that are effective at ranking hypotheses.
+Your task will be to extract features from pairs of references $(\textbf{h},\textbf{r})$ that are effective at ranking hypotheses. You will be given a series of inputs of the form:
 
-To run this baseline heuristic model, use the following command:
+    This is my reference translation ||| That are my hypothesized translation
+    This is another reference ||| This be a further translation
+
+For each line, you will extract a *feature map* of the following form:
+
+    {"Feature1":1.0, "SomeOtherFeature":-9.8}
+    {"Feature2":-0.5, "Feature1":2.2}
+
+That's all. There is a baseline feature extractor called `./extract` and code to fit the data. **Note:** You will need to install the [`creg` regression package](https://github.com/redpony/creg) to run the fitting code. This will require installing the [Boost C++ libraries](http://www.boost.org/) or using a machine where they are installed.
 
     ./extract | ./fit --l2 1.0 > simple.weights
 
