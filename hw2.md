@@ -93,7 +93,7 @@ The workflow for this project involves four parts: (1) feature extraction, (2) p
     ./score -w weights.json < myfeatures.json > scores.txt
     ./evaluate < scores.txt
 
-The `evaluate` command scores the quality of your evaluation function relative to human judgements of translation quality and reports [Kendell's $\tau$](http://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient).
+The `evaluate` command scores the quality of your evaluation function relative to human judgements of translation quality and reports [Kendell's $\tau$](http://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient) (this is also the official evaluation metric for the shared task).
 
 ## The Challenge: Features for Evaluation
 
