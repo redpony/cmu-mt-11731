@@ -82,23 +82,22 @@ For each line, you will extract a *feature map* of the following form:
 
 It's as simple as that! There is a baseline feature extractor called `./extract` and code to fit the data. **Note:** You will need to install the [`creg` regression package](https://github.com/redpony/creg) to run the fitting code, [download the source tarball](http://demo.clab.cs.cmu.edu/cdec/creg-2014-02-18.tar.gz). Building `creg` will require installing the [Boost C++ libraries](http://www.boost.org/) or using a machine where they are installed.
 
-    ./extract | ./fit --l2 1.0 > simple.weights
+The general workflow (1) feature extraction, (2) parameter fitting, (3) computing the scores for the training/dev/test data, and (4) evaluation. You will find scripts to do all of these things:
 
-To see how well you did, run the following command.
+    ./extract > myfeatures.json
+    ./fit --l2 1.0 < myfeatures.json > weights.json
+    ./score -w weights.json < myfeatures.json > scores.txt
+    ./evaluate < scores.txt
 
-    ./grade < simple.weights
-
-This command scores the quality of your evaluation function relative to human judgements of translation quality and reports [Kendell's $\tau$](http://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient).
+The `evaluate` command scores the quality of your evaluation function relative to human judgements of translation quality and reports [Kendell's $\tau$](http://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient).
 
 ## The Challenge
 
-Your task for this assignment is to **improve the accuracy of your translation evaluator relative to human judgements of translation quality as much as possible**.
+Your task for this assignment is to **improve the accuracy of your translation evaluator relative to human judgements of translation quality as much as possible** by engineering features (i.e., modifying `extract`) that help predict whether a hypothesized translation is good.
 
-Developing an implementation that predicts which translation hypothesis is better relative to the reference by using the **simple morphological METEOR score** is enough to earn seven points. The simple morphological METEOR score is defined as the weighted [harmonic mean](http://en.wikipedia.org/wiki/Harmonic_mean) of the following four quantities: the precision and recall of full word matches and the precision and recall of the hypothesis and reference words truncated just to their **first 6 letters** in each hypothesis against the reference.
+The baseline system required to earn seven points is the **simple morphological METEOR score** is enough to earn seven points. The simple morphological METEOR score is defined as the weighted [harmonic mean](http://en.wikipedia.org/wiki/Harmonic_mean) of the following four quantities: the precision and recall of full word matches and the precision and recall of the hypothesis and reference words truncated just to their **first 6 letters** in each hypothesis against the reference.
 
-This is a very simple baseline to implement, and we are particularly ethusiastic for you to experiment with developing methods to.
-
- the goal of this assignment is for you to develop a new approach to evaluating machine translation output that performs better than standard algorithms (as usual, you are not even required to implement the simple METEOR baseline at all, as long as you can beat it). *To get full credit, you will need to experiment.* Here are some ideas that might inspire you:
+This is a very simple baseline to implement, and we are particularly ethusiastic for you to experiment with new techniques for assessing translation quality. The sky is the limit! Here are some ideas that might inspire you:
 
  * Compute string similarity using [string subsequence kernels](http://jmlr.csail.mit.edu/papers/volume2/lodhi02a/lodhi02a.pdf)
  * Use unsupervised morphology (here's [one tool](https://github.com/vchahun/fast_umorph), here's [another](https://pypi.python.org/pypi/Morfessor)) to split complex words into simpler pieces.
