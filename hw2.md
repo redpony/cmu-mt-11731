@@ -82,7 +82,11 @@ For each line, you will extract a *feature map* of the following form:
 
 It's as simple as that! There is a baseline feature extractor called `./extract` and code to fit the data. **Note:** You will need to install the [`creg` regression package](https://github.com/redpony/creg) to run the fitting code, [download the source tarball](http://demo.clab.cs.cmu.edu/cdec/creg-2014-02-18.tar.gz). Building `creg` will require installing the [Boost C++ libraries](http://www.boost.org/) or using a machine where they are installed.
 
-The general workflow (1) feature extraction, (2) parameter fitting, (3) computing the scores for the training/dev/test data, and (4) evaluation. You will find scripts to do all of these things:
+**Important:** in order for the `fit` command described below to function, you set the `CREG` [environment variable](http://en.wikipedia.org/wiki/Environment_variable) to point to your `creg` binary. This looks something like the following:
+
+    export CREG=/path/to/creg/creg/creg
+
+The workflow for this project involves four parts: (1) feature extraction, (2) parameter fitting, (3) computing the scores for the training/dev/test data, and (4) evaluation. You will find scripts to do all of these things:
 
     ./extract > myfeatures.json
     ./fit --l2 1.0 < myfeatures.json > weights.json
@@ -93,7 +97,7 @@ The `evaluate` command scores the quality of your evaluation function relative t
 
 ## The Challenge: Features for Evaluation
 
-Your task for this assignment is to **improve the accuracy of your translation evaluator relative to human judgements of translation quality as much as possible** by engineering features (i.e., modifying `extract`) that help predict whether a hypothesized translation is good.
+Your task for this assignment is to **improve the accuracy of your translation evaluator relative to human judgements of translation quality as much as possible** by engineering features (i.e., modifying `extract`) that help predict whether a hypothesized translation is good. You do not need to make any changes to `fit`, `score`, or `evaluate` (although you may want to try different values for the `--ls` option).
 
 The baseline system required to earn seven points is the **simple morphological METEOR score** is enough to earn seven points. The simple morphological METEOR score is defined as the weighted [harmonic mean](http://en.wikipedia.org/wiki/Harmonic_mean) of the following four quantities: the precision and recall of full word matches and the precision and recall of the hypothesis and reference words truncated just to their **first 6 letters** in each hypothesis against the reference.
 
