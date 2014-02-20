@@ -97,7 +97,7 @@ The `evaluate` command scores the quality of your evaluation function relative t
 
 ## The Challenge: Features for Evaluation
 
-Your task for this assignment is to **improve the accuracy of your translation evaluator relative to human judgements of translation quality as much as possible** by engineering features (i.e., modifying `extract`) that help predict whether a hypothesized translation is good. You do not need to make any changes to `fit`, `score`, or `evaluate` (although you may want to try different values for the `--ls` option).
+Your task for this assignment is to **improve the accuracy of your translation evaluator relative to human judgements of translation quality as much as possible** by engineering features (i.e., modifying `extract`) that help predict whether a hypothesized translation is good. You do not need to make any changes to `fit`, `score`, or `evaluate` (although you may want to try different values for the `--l2` option).
 
 The baseline system required to earn seven points is the **simple morphological METEOR score** is enough to earn seven points. The simple morphological METEOR score is defined as the weighted [harmonic mean](http://en.wikipedia.org/wiki/Harmonic_mean) of the following four quantities: the precision and recall of full word matches and the precision and recall of the hypothesis and reference words truncated just to their **first 6 letters** in each hypothesis against the reference.
 
