@@ -90,8 +90,8 @@ The workflow for this project involves four parts: (1) feature extraction, (2) p
 
     ./extract > myfeatures.json
     ./fit --l2 1.0 < myfeatures.json > weights.json
-    ./score -w weights.json < myfeatures.json > scores.txt
-    ./evaluate < scores.txt
+    ./score -w weights.json < myfeatures.json > output.txt
+    ./evaluate < output.txt
 
 The `evaluate` command scores the quality of your evaluation function relative to human judgements of translation quality and reports [Kendell's $\tau$](http://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient) (this is also the official evaluation metric for the shared task).
 
@@ -122,7 +122,7 @@ Be creative!
     * Once you have formed a group, you may **not** disband until the next homework.
 
  * You must turn in the following by submitting to the public GitHub repository
-    * `hw2/output.txt` - your predictions (1 per line) on `data/test.hyp1-hyp2-ref`
+    * `hw2/output.txt` - your scored (reference, hypothesis) pairs (1 per line)
     * `hw2/README.md` - a brief description of the algorithms you tried.
     * `hw2/...` - your source code and revision history. We want to see evidence of *regular progress* over the course of the project. You don't have to `git push` to the public repository unless you want to, but you should be committing changes with `git add` and `git commit`. We expect to see evidence that you are trying things out and learning from what you see.
 
