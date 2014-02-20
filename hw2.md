@@ -68,7 +68,7 @@ p(Y < j \mid \textbf{h}_1, \textbf{h}_2, \textbf{r}) &= \mathrm{logit}(\alpha_{j
 
 In this model, the intercepts $-\infty < \alpha_0 < \alpha_1 < \infty$ that indicate where the boundaries between the ranking ordering categories lie. We provide code to learn the weights $(\boldsymbol{w},\alpha_0,\alpha_1)$ given a set of pairwise judgements so as to maximize the likelihood according to the above model. We encourage you to use this code, but you are welcome to devise another learning-to-rank algorithm.
 
-## Feature Engineering
+## Running the Tools
 
 Your task will be to extract features from pairs of references $(\textbf{h},\textbf{r})$ that are effective at ranking hypotheses. You will be given a series of inputs of the form:
 
@@ -91,7 +91,7 @@ The general workflow (1) feature extraction, (2) parameter fitting, (3) computin
 
 The `evaluate` command scores the quality of your evaluation function relative to human judgements of translation quality and reports [Kendell's $\tau$](http://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient).
 
-## The Challenge
+## The Challenge: Features for Evaluation
 
 Your task for this assignment is to **improve the accuracy of your translation evaluator relative to human judgements of translation quality as much as possible** by engineering features (i.e., modifying `extract`) that help predict whether a hypothesized translation is good.
 
