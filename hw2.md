@@ -110,9 +110,16 @@ This is a very simple baseline to implement, and we are particularly ethusiastic
  * Use [vector space representations of words](http://www.jair.org/media/2934/live-2934-4846-jair.pdf) to assess semantic similarity.
  * Use [vector space representations of sentences](http://nlp.stanford.edu/pubs/SocherHuangPenningtonNgManning_NIPS2011.pdf) to assess semantic similarity.
  * Use a dependency parser to assess syntactic wellformedness ([paper](http://ssli.ee.washington.edu/people/jgk/dist/metaweb/mtjournal.pdf))
+ * Use a lexical translation model (e.g., from your previous assignment) to "translate" (i.e., paraphrase) the reference into the hypothesis, and compute the perplexity or likelihood
  * See what evaluation measures other people have implemented ([paper](http://www.statmt.org/wmt10/pdf/wmt10-overview.pdf))
 
 Be creative!
+
+You may find it useful to use extra data or tools for this task, for example:
+
+ * [English-Czech monolingual or parallel corpora](http://www.statmt.org/wmt14/translation-task.html).
+ * [Word vector creation tools](https://code.google.com/p/word2vec/)
+ * [Language modeling tools](http://kheafield.com/code/kenlm/)
 
 ## Ground Rules
 
