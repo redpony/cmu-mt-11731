@@ -27,6 +27,7 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
       <th valign="top">
         <a href="hw0.html">#0</a>
       </th>
+<!--
       <th valign="top">
         <a href="hw1.html">#1</a><br/>
         <span class="small">AER</span>
@@ -43,6 +44,7 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
         <a href="hw4.html">#4</a><br/>
         <span class="small"></span>
       </th>
+-->
     </tr>
   </thead>
   <tbody id="scorediv">
