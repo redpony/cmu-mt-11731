@@ -1,7 +1,6 @@
 11731.github.com
 ================
 
-Machine Translation (11-731)
+Machine Translation (11-731) Spring 20XX
 
-Spring 2014
 
