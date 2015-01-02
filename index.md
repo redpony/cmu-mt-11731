@@ -2,7 +2,7 @@
 layout: default
 title: Overview
 ---
-# Machine Translation | 11-731 | Spring 2014
+# Machine Translation | 11-731 | Spring 2015
 
 ## At a Glance
 
@@ -72,9 +72,9 @@ Welcome to Machine Translation (11-731). This 12-credit graduate course will pro
 
 ## Piazza
 
-This semester we will be using Piazza for class discussion. The system is designed to get you help fast and efficiently from classmates, Wang, Alon, and me. *Rather than emailing questions to the instructors, we encourage you to post your questions on [Piazza](https://piazza.com/cmu/spring2014/11731/home)*. It supports LaTeX for equations, syntax highlighting for code and keeps all materials related to the course in one place.
+This semester we will be using Piazza for class discussion. The system is designed to get you help fast and efficiently from classmates, Austin, Alon, and me. *Rather than emailing questions to the instructors, we encourage you to post your questions on [Piazza](https://piazza.com/cmu/spring2015/11731/home)*. It supports LaTeX for equations, syntax highlighting for code and keeps all materials related to the course in one place.
 
-[Find our class page here.](https://piazza.com/cmu/spring2014/11731/home)
+[Find our class page here.](https://piazza.com/cmu/spring2015/11731/home)
 
 ## Software
 
@@ -82,15 +82,17 @@ This semester we will be using Piazza for class discussion. The system is design
  * [Moses](http://www.statmt.org/moses/) is a widely-used machine translation toolkit that includes phrase-based and syntactic model support (C++)
  * [Joshua](http://cs.jhu.edu/~ccb/joshua/) is a translation toolkit designed for syntax-based models (Java)
  * [Cubit](http://www.cis.upenn.edu/~lhuang3/cubit/) is a very simple phrase-based decoder (Python)
- * [SRILM](http://www.speech.sri.com/projects/srilm/) is SRI’s language modeling toolkit (C++)
+ * [GroundHog](https://github.com/lisa-groundhog/GroundHog) is a recurrent neural network toolkit based on [Theano](http://deeplearning.net/software/theano/) (Python)
  * [KenLM](http://kheafield.com/code/kenlm/) is a highly optimized library for representing and querying $n$-gram language models (C++)
+ * [SRILM](http://www.speech.sri.com/projects/srilm/) is SRI’s language modeling toolkit (C++)
  * [BerkeleyLM](http://code.google.com/p/berkeleylm/) is another $n$-gram language model library (Java)
- * [Giza++](http://code.google.com/p/giza-pp/) implements EM training for the IBM translation models and is widely used for word alignment (C++)
+ * [fast_align](https://github.com/clab/fast_align) is a simple extension of IBM Model 1 that substantially improves performance (C++)
+ * [Giza++](http://code.google.com/p/giza-pp/) implements EM training for the IBM translation models (C++)
 
 ## Freely Available (Parallel) Corpora
 
  * [WIT<sup>3</sup>](https://wit3.fbk.eu/) is a transcribed corpus of [TED talks](http://www.ted.com/talks) in many languages (small/medium).
- * The [2012 Workshop on Machine Translation Shared Task](http://statmt.org/wmt12/translation-task.html) distributes European Parliament (large) and News Commentary (medium) parallel data as well as standard development and test sets.
+ * The [2015 Workshop on Machine Translation Shared Task](http://statmt.org/wmt15/translation-task.html) distributes European Parliament (large), News Commentary (medium) parallel data in several European languages, as well as standard development and test sets. Large amounts of monolingual data are also available.
  * [OPUS](http://opus.lingfil.uu.se/) is a growing collection of parallel data in many domains and languages.
 
 ## Other MT Courses
