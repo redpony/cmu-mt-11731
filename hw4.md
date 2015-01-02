@@ -4,7 +4,7 @@ title: Homework 4
 ---
 # Homework 4
 
-**Due 11:59pm on Tuesday, Apr. 23, 2013**
+**Due 11:59pm on Tuesday, May 1, 2014**
 
 *Reranking* is a common technique in machine translation which uses a discriminative model to *rescore* a set of the predictions made by a simpler machine translation model to make a better translation prediction. Reranking models are powerful since they do not need to *generate* translations only to *rerank* them. These models can therefore use overlapping, nonindependent features derived from rich information sources. Additionally, they are often applied to a subset of promising hypotheses, so computational effort is utilized only where it is most beneficial.
 

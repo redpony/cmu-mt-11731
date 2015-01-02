@@ -12,18 +12,26 @@ for (var user in homework) {
     arrayToSort.push(userArray);
 }
 
-var sortIndex = 5;
+var sortIndex = 2;
 var ascending = 1;
 arrayToSort.sort(function(a,b){
    var scoreA = a[sortIndex];
    var scoreB = b[sortIndex];
-   if(scoreA == -1){
-      scoreA = -9999;
+   if(scoreA == -1) {
+     if (ascending == 1) {
+       scoreA = 9999;
+     } else {
+       scoreA = -9999;
+     }
    }
    if(scoreB == -1){
-      scoreB = -9999;
+     if (ascending == 1) {
+       scoreB = 9999;
+     } else {
+       scoreB = -9999;
+     }
    }
-   if(ascending == 1){
+   if(ascending == 0){
       return scoreB-scoreA;
    }
    else {

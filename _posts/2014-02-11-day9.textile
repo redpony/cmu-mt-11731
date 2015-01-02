@@ -2,6 +2,7 @@
 title: Evaluation I
 slides: 09.eval1.pdf
 day: 9
+language-in-10: Dialectal Arabic
 reading:
   -
     author: Callison-Burch et al.

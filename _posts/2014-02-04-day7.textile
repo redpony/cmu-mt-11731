@@ -3,7 +3,6 @@ title: Phrase-based MT I
 slides: 07.pbmt1.pdf
 day: 7
 book: 5
-language-in-10: Russian
 reading:
   -
     author: Marcu and Wong

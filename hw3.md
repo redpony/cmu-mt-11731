@@ -4,7 +4,7 @@ title: Homework 3
 ---
 # Homework 3
 
-**Due 11:59pm on Tuesday, Apr. 2, 2013**
+**Due 11:59pm on Tuesday, Apr. 10, 2014**
 
 Decoding is the problem of taking an input sentence in a foreign language:
 

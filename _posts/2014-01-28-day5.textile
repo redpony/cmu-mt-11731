@@ -3,7 +3,6 @@ title: Lexical Translation Models II
 slides: 05.lexical2.pdf
 day: 5
 book: 4.4, 4.6
-language-in-10: Latin
 reading:
   -
     author: Brown et al.

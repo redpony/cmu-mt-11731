@@ -33,15 +33,15 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
       </th>
       <th valign="top">
         <a href="hw2.html">#2</a><br/>
-        <span class="small">Accuracy</span>
+        <span class="small"></span>
       </th>
       <th valign="top">
         <a href="hw3.html">#3</a><br/>
-        <span class="small">model score</span>
+        <span class="small"></span>
       </th>
       <th valign="top">
         <a href="hw4.html">#4</a><br/>
-        <span class="small">METEOR</span>
+        <span class="small"></span>
       </th>
     </tr>
   </thead>
