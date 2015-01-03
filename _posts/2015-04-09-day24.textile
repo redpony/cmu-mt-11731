@@ -1,0 +1,5 @@
+---
+title: Neural MT II
+# slides:
+day: 24
+---

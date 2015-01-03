@@ -1,0 +1,5 @@
+---
+title: Hierarchical Phrase Based Translation
+# slides:
+day: 16
+---

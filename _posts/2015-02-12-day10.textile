@@ -1,15 +1,14 @@
 ---
-title: Phrase-based MT I
-slides: 10.pbmt1.pdf
+title: Noisy Channel Translation
+# slides: 10.noisy.pdf
 day: 10
-book: 5
 reading:
   -
-    author: Marcu and Wong
-    title: A Phrase-Based, Joint Probability Model for Statistical Machine Translation
-    url: http://www.aclweb.org/anthology/W/W02/W02-1018.pdf
+    author: Norvig
+    title: How to Write a Spelling Corrector
+    url: http://norvig.com/spell-correct.html
   -
-    author: DeNero et al.
-    title: Sampling Alignment Structure under a Bayesian Translation Model
-    url: http://aclweb.org/anthology/D/D08/D08-1033.pdf
+    author: Yuret and Yatbaz
+    title: The Noisy Channel Model for Unsupervised Word Sense Disambiguation
+    url: http://www.aclweb.org/anthology-new/J/J10/J10-1004.pdf
 ---

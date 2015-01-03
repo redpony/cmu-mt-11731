@@ -10,10 +10,10 @@
 **Homeworks** ([Leaderboard](leaderboard.html))
 
  * [Homework 0]({{site.baseurl}}/hw0.html)
- * [Homework 1]({{site.baseurl}}/hw1.html)
- * [Homework 2]({{site.baseurl}}/hw2.html)
- * [Homework 3]({{site.baseurl}}/hw3.html)
- * [Homework 4]({{site.baseurl}}/hw4.html)
+ * Homework 1
+ * Homework 2
+ * Homework 3
+ * Homework 4
 
 {% endcapture %}
 {{ stuff | markdownify }}

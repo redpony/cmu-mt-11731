@@ -1,6 +1,6 @@
 ---
 title: Language Models
-slides: 03.lm.pdf
+# slides: 03.lm.pdf
 day: 3
 book: 4.3, 7
 reading:
@@ -9,7 +9,7 @@ reading:
     title: Improved Backing-Off for m-Gram Language Modeling
     url: http://ieeeexplore.ieee.org/xpls/abs_all.jsp?arnumber=479394
   -
-    author: Bengio et al.
-    title: A Neural Probabilistic Language Model
-    url: http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf
+    author: Pauls and Klein
+    title: Large-Scale Syntactic Language Modeling with Treelets
+    url: http://www.cs.berkeley.edu/~adpauls/PAPERS/acl2012.pdf
 ---

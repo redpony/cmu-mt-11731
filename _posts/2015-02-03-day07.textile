@@ -1,15 +1,14 @@
 ---
-title: Evaluation I
-slides: 07.eval1.pdf
-book: 8
+title: Discriminative Alignment Models
+# slides: 07.disc-align.pdf
 day: 7
 reading:
   -
-    author: Callison-Burch et al.
-    title: Findings of the 2010 Joint Workshop on Statistical Machine Translation and Metrics for Machine Translation
-    url: http://www.aclweb.org/anthology-new/W/W10/W10-1703.pdf
+    author: Blunsom and Cohn
+    title: Discriminative Word Alignment with Conditional Random Fields
+    url: http://www.aclweb.org/anthology/P06-1009
   -
-    author: Snover et al.
-    title: Fluency, Adequacy, or HTER? Exploring Different Human Judgments with a Tunable MT Metric
-    url: http://www.cs.umd.edu/~snover/pub/wsmt09/terp_wsmt09.pdf
+    author: Ammar et al.
+    title: Conditional Random Field Autoencoders for Unsupervised Structured Prediction
+    url: http://papers.nips.cc/paper/5344-conditional-random-field-autoencoders-for-unsupervised-structured-prediction.pdf
 ---

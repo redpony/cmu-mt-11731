@@ -1,14 +1,19 @@
 ---
-title: Noisy Channel Translation
-slides: 09.noisy.pdf
+title: Evaluation II
+# slides: 08.eval2.pdf
+book: 8
 day: 9
 reading:
   -
-    author: Norvig
-    title: How to Write a Spelling Corrector
-    url: http://norvig.com/spell-correct.html
+    author: Lavie and Denkowski
+    title: The METEOR Metric for Automatic Evaluation of Machine Translation
+    url: http://www.cs.cmu.edu/afs/cs.cmu.edu/project/mteval-1/Papers/MT-Journal-2009/meteor-mtj-2009.pdf
   -
-    author: Yuret and Yatbaz
-    title: The Noisy Channel Model for Unsupervised Word Sense Disambiguation
-    url: http://www.aclweb.org/anthology-new/J/J10/J10-1004.pdf
+    author: Papineni et al.
+    title: 'BLEU: a Method for Automatic Evaluation of Machine Translation'
+    url: http://acl.ldc.upenn.edu/P/P02/P02-1040.pdf
+  -
+    author: Snover et al.
+    title: A Study of Translation Edit Rate with Targeted Human Annotation
+    url: http://www.cs.umd.edu/~snover/pub/amta06/ter_amta.pdf
 ---

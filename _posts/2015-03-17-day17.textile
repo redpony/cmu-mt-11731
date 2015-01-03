@@ -1,0 +1,5 @@
+---
+title: Syntactic Translation Models
+# slides:
+day: 17
+---

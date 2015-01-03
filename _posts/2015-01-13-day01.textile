@@ -1,6 +1,6 @@
 ---
 title: Introduction
-slides: 01.intro.pdf
+# slides: 01.intro.pdf
 day: 1
 book: 1
 reading:

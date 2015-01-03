@@ -1,7 +1,8 @@
 ---
 title: Microblogs and Translation
-slides: 06.social.pdf
+# slides: 06.social.pdf
 day: 6
+lecturer: Wang Ling
 reading:
   -
     author: Ling et al.

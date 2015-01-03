@@ -1,0 +1,6 @@
+---
+title: 'Decoding: Dynamic Programming and Beam Search'
+# slides:
+day: 12
+book: 5
+---

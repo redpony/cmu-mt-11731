@@ -1,0 +1,5 @@
+---
+title: Discriminative Training II
+# slides:
+day: 14
+---
