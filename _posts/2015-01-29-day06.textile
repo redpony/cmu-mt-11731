@@ -1,0 +1,18 @@
+---
+title: Microblogs and Translation
+slides: 06.social.pdf
+day: 6
+reading:
+  -
+    author: Ling et al.
+    title: Microblogs as Parallel Corpora
+    url: http://aclweb.org/anthology/P13-1018
+  -
+    author: Ling et al.
+    title: Paraphrasing 4 Microblog Translation
+    url: http://www.aclweb.org/anthology/D13-1008
+  -
+    author: Eisenstein
+    title: What to do about bad language on the internet
+    url: http://www.cc.gatech.edu/~jeisenst/papers/naacl2013-badlanguage.pdf
+---

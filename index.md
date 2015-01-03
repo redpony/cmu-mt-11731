@@ -6,19 +6,19 @@ title: Overview
 
 ## At a Glance
 
- * **Instructor**: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) | GHC 5707 | Mondays 3–4
- * **Instructor**: [Alon Lavie](http://www.cs.cmu.edu/~alavie) | GHC 5713 | By appointment
- * **TA**: [Yulia Tsvetkov](http://scholar.google.com/citations?user=SEDPkrsAAAAJ) | GHC 6405 | Tuesdays 3–4
- * **Location**: [Doherty Hall 2122](http://www.cmu.edu/computing/class-event/classrooms/doherty/2122.html)
- * **Time**: Tuesday/Thursday 1:30–2:50
- * **Textbook**: Philipp Koehn, *Statistical Machine Translation* | [Publisher](https://www.cambridge.org/us/catalogue/catalogue.asp?isbn=9780521874151) | [Amazon](http://www.amazon.com/dp/0521874157) | [Errata](http://www.statmt.org/book/errata.html)
- * **Prerequisites**: Algorithms for NLP, Machine learning, or permission from instructor
- * **Piazza**: [discussion board](https://piazza.com/cmu/spring2014/11731/home)
- * **GitHub**: [course repository](https://github.com/clab/sp2014.11-731)
+ * Instructor: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) : GHC 5707 : By appointment
+ * Instructor: [Alon Lavie](http://www.cs.cmu.edu/~alavie) : GHC 5713 : By appointment
+ * TA: [Austin Matthews](http://armatthews.com/) : GHC 5409 : TBD
+ * Location: [GHC 4102](http://www.cmu.edu/computing/class-event/classrooms/gates/4102.html)
+ * Time: Tuesday/Thursday 1:30–2:50
+ * Textbook: Philipp Koehn, *Statistical Machine Translation* : [Publisher](https://www.cambridge.org/us/catalogue/catalogue.asp?isbn=9780521874151) : [Amazon](http://www.amazon.com/dp/0521874157) : [Errata](http://www.statmt.org/book/errata.html)
+ * Prerequisites: Algorithms for NLP, Machine learning, or permission from instructor
+ * Piazza: [discussion board](https://piazza.com/cmu/spring2015/11731/home)
+ * GitHub: [course repository](https://github.com/clab/sp2015.11-731)
 
 ## Overview
 
-Welcome to Machine Translation (11-731). This 12-credit graduate course will provide a comprehensive overview of current techniques in statistical machine translation, such as those used by [Google Translate](http://translate.google.com/) and [Bing Translator](http://www.bing.com/translator).
+Welcome to Machine Translation (11-731). This 12-credit graduate course will provide a comprehensive overview of current techniques in statistical machine translation, such as those used by [Google Translate](http://translate.google.com/), [Bing Translator](http://www.bing.com/translator), and [Baidu Online Translate](http://translate.baidu.com/).
 
 ## Syllabus
 
@@ -81,6 +81,7 @@ This semester we will be using Piazza for class discussion. The system is design
  * [cdec](http://www.cdec-decoder.org/) is a machine translation research platform developed at CMU (C++)
  * [Moses](http://www.statmt.org/moses/) is a widely-used machine translation toolkit that includes phrase-based and syntactic model support (C++)
  * [Joshua](http://cs.jhu.edu/~ccb/joshua/) is a translation toolkit designed for syntax-based models (Java)
+ * [Phrasal](http://nlp.stanford.edu/phrasal/) is the Stanford phrase based translation engine (Java)
  * [Cubit](http://www.cis.upenn.edu/~lhuang3/cubit/) is a very simple phrase-based decoder (Python)
  * [GroundHog](https://github.com/lisa-groundhog/GroundHog) is a recurrent neural network toolkit based on [Theano](http://deeplearning.net/software/theano/) (Python)
  * [KenLM](http://kheafield.com/code/kenlm/) is a highly optimized library for representing and querying $n$-gram language models (C++)
@@ -92,7 +93,7 @@ This semester we will be using Piazza for class discussion. The system is design
 ## Freely Available (Parallel) Corpora
 
  * [WIT<sup>3</sup>](https://wit3.fbk.eu/) is a transcribed corpus of [TED talks](http://www.ted.com/talks) in many languages (small/medium).
- * The [2015 Workshop on Machine Translation Shared Task](http://statmt.org/wmt15/translation-task.html) distributes European Parliament (large), News Commentary (medium) parallel data in several European languages, as well as standard development and test sets. Large amounts of monolingual data are also available.
+ * The [2015 Workshop on Machine Translation Shared Task](http://statmt.org/wmt15/translation-task.html) distributes European Parliament (large), News Commentary (medium) parallel data in several European languages, as well as standard development and test sets. Large amounts of monolingual data are also available here.
  * [OPUS](http://opus.lingfil.uu.se/) is a growing collection of parallel data in many domains and languages.
 
 ## Other MT Courses

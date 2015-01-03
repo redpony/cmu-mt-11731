@@ -1,0 +1,15 @@
+---
+title: Language Models
+slides: 03.lm.pdf
+day: 3
+book: 4.3, 7
+reading:
+  -
+    author: Kneser and Ney
+    title: Improved Backing-Off for m-Gram Language Modeling
+    url: http://ieeeexplore.ieee.org/xpls/abs_all.jsp?arnumber=479394
+  -
+    author: Bengio et al.
+    title: A Neural Probabilistic Language Model
+    url: http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf
+---

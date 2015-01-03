@@ -1,0 +1,19 @@
+---
+title: Lexical Translation Models II
+slides: 05.lexical2.pdf
+day: 5
+book: 4.4, 4.6
+reading:
+  -
+    author: Brown et al.
+    title: The Mathematics of Statistical Machine Translation; Parameter Estimation
+    url: http://aclweb.org/anthology/J/J93/J93-2003.pdf
+  -
+    author: Vogel and Ney
+    title: HMM-based word alignment in statistical translation
+    url: http://aclweb.org/anthology/C/C96/C96-2141.pdf
+  -
+    author: Ammar et al.
+    title: Conditional Random Field Autoencoders for Unsupervised Structured Prediction
+    url: http://papers.nips.cc/paper/5344-conditional-random-field-autoencoders-for-unsupervised-structured-prediction.pdf
+---

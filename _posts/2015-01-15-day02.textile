@@ -1,0 +1,15 @@
+---
+title: Probability Review
+slides: 02.probability.pdf
+day: 2
+book: 3
+reading:
+  -
+    author: Johnson
+    title: Joint and conditional estimation of tagging and parsing models
+    url: http://acl.ldc.upenn.edu/P/P01/P01-1042.pdf
+  -
+    author: Klein and Manning
+    title: Maxent Models, Conditional Estimation, and Optimization, without the Magic
+    url: http://www.cs.berkeley.edu/~klein/papers/maxent-tutorial-slides.pdf
+---
