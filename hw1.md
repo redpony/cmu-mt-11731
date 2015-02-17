@@ -88,6 +88,10 @@ The iterative EM update for this model is straightforward. At each iteration, fo
 
  * **A few things are off-limits:** Giza++, fast_align, cdec’s alignment tools, the Berkeley Aligner, or anything else that already does the alignment for you. You must write your own code for alignment. If you want to do system combination, join forces with your classmates to form a group.
 
+## Further reading
+
+ * [Brendan O'Connor](http://brenocon.com/) has a set of [excellent notes about IBM Model 1](http://people.cs.umass.edu/~brenocon/inlp2014/notes/model1_em.html).
+
 ## Acknowledgements
 
 This assignment has been done in various forms in the past by [Philipp Koehn](http://homepages.inf.ed.ac.uk/pkoehn/), [John DeNero](http://www.denero.org/), and at [Adam Lopez, Chris Callison-Burch, and Matt Post](http://mt-class.org/hw1.html).
