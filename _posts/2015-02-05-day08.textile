@@ -1,6 +1,6 @@
 ---
 title: Evaluation I
-# slides: 08.eval1.pdf
+slides: MT-Human-Evaluation-2015.pdf
 book: 8
 day: 8
 reading:

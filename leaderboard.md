@@ -4,7 +4,7 @@ title: Leaderboard
 ---
 # Leaderboard
 
-This page contains the assignment leaderboard. The leaderboard is updated as follows: every five minutes, every assignment not yet past its due date is downloaded from the git repository you provided in [Homework 0](hw0.html), and the output is rescored if it has changed.
+This page contains the assignment leaderboard. The leaderboard is updated as follows: every few minutes, every assignment not yet past its due date is downloaded from the git repository you provided in [Homework 0](hw0.html), and the output is rescored if it has changed.
 
 <script src="homework.js">
 </script>
@@ -25,26 +25,25 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
         Handle
       </th>
       <th valign="top">
-        <a href="hw0.html">#0</a>
+        <a href="javascript:;" onclick="resort(1, 0); drawLeaderboard(); return false;">#0</a><br/>
+        <span class="small"></span>
       </th>
-<!--
       <th valign="top">
-        <a href="hw1.html">#1</a><br/>
+        <a href="javascript:;" onclick="resort(2, 1); drawLeaderboard(); return false;">#1</a><br/>
         <span class="small">AER</span>
       </th>
       <th valign="top">
-        <a href="hw2.html">#2</a><br/>
-        <span class="small"></span>
+        <a href="javascript:;" onclick="resort(3, 0); drawLeaderboard(); return false;">#2</a><br/>
+        <span class="small">Accuracy</span>
       </th>
       <th valign="top">
-        <a href="hw3.html">#3</a><br/>
-        <span class="small"></span>
+        <!--<a href="hw3.html">-->#3<!--</a>--><br/>
+        <span class="small"><!--Model Score--></span>
       </th>
       <th valign="top">
-        <a href="hw4.html">#4</a><br/>
-        <span class="small"></span>
+        <!--<a href="hw4.html">-->#4<!--</a>--><br/>
+        <span class="small"><!--METEOR--></span>
       </th>
--->
     </tr>
   </thead>
   <tbody id="scorediv">

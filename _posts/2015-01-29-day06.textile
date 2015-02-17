@@ -3,6 +3,7 @@ title: Microblogs and Translation
 # slides: 06.social.pdf
 day: 6
 lecturer: Wang Ling
+language-in-10: Mongolian
 reading:
   -
     author: Ling et al.

@@ -4,7 +4,7 @@ title: Homework 1
 ---
 # Homework 1
 
-**Due 11:59pm on Tuesday, Feb. 10, 2015**
+**Due 11:59pm on Thursday, Feb. 12, 2015**
 
 Word alignment is a fundamental task in statistical machine translation. This homework will give you an opportunity to explore solutions to this challenging and interesting problem.
 
@@ -12,7 +12,7 @@ Word alignment is a fundamental task in statistical machine translation. This ho
 
 Go to your clone of your course GitHub repository on the machine where you will be doing this assignment. Run the following command to obain the code and data you will need:
 
-    git pull --no-edit git@github.com:clab/sp2015.11-731.git master
+    git pull git@github.com:clab/sp2015.11-731.git master
 
 In the new `hw1/` subdirectory, you will find a word-aligner written in Python, along with 100,000 German–English parallel sentences from the [Europarl corpus](http://www.statmt.org/europarl/) (version 7). This aligner uses *set similarity* to determine which words are aligned to each other in a corpus of parallel sentences. The set similarity measure we use is [Dice’s coefficient](http://en.wikipedia.org/wiki/Dice's_coefficient), defined in terms of sets $X$ and $Y$ as follows:
 
@@ -44,7 +44,7 @@ Your task for this assignment is to **improve the alignment error rate as much a
 
 IBM Model 1 is a simple probabilistic translation model we talked about in class. A source sentence $\textbf{g} = \langle \varepsilon, g_1, g_2 , \ldots , g_{n} \rangle$ (where $\varepsilon$ represents a null token present in every sentence) and a desired target sentence length $m$ are given, and conditioned on these, Model 1 defines a distribution over translations of length $m$ into the target language using the following process:
 
-$$\begin{align\*} \mbox{for each}&i \in \[1,2,\ldots,m\] \\\\
+$$\begin{align\*} \mbox{for each }&i \in \[1,2,\ldots,m\] \\\\
 a_i &\sim \textrm{Uniform}(0,1,2,\ldots,n) \\\\
 e_i &\sim \textrm{Categorical}(\boldsymbol{\theta}_{g_{a_i}})
 \end{align\*}$$
@@ -74,8 +74,8 @@ The iterative EM update for this model is straightforward. At each iteration, fo
 
 ## Ground Rules
 
- * You may work in independently or in groups of any size, under these conditions:
-    * You must notify us by posting a public note to piazza including the e-mails of everyone who will be working in the group (max=3).
+ * You may work in independently or in groups of up to three students, under these conditions:
+    * You must notify us by posting a public note to piazza including the e-mails of everyone who will be working in the group.
     * Everyone in the group will receive the same grade on the assignment.
     * Once you have formed a group, you may **not** disband until the next homework.
 

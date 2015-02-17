@@ -8,7 +8,7 @@ title: Overview
 
  * Instructor: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) : GHC 5707 : By appointment
  * Instructor: [Alon Lavie](http://www.cs.cmu.edu/~alavie) : GHC 5713 : By appointment
- * TA: [Austin Matthews](http://armatthews.com/) : GHC 5409 : TBD
+ * TA: [Austin Matthews](http://armatthews.com/) : GHC 5409 : Tuesdays 11:30 - 1:20 or by appointment
  * Location: [GHC 4102](http://www.cmu.edu/computing/class-event/classrooms/gates/4102.html)
  * Time: Tuesday/Thursday 1:30–2:50
  * Textbook: Philipp Koehn, *Statistical Machine Translation* : [Publisher](https://www.cambridge.org/us/catalogue/catalogue.asp?isbn=9780521874151) : [Amazon](http://www.amazon.com/dp/0521874157) : [Errata](http://www.statmt.org/book/errata.html)
@@ -47,7 +47,7 @@ Welcome to Machine Translation (11-731). This 12-credit graduate course will pro
       {% endif %}
       {% endif %}
       {% if post.language-in-10 %}
-      L-in-10: <a href="slides/{{post.language-in-10 | downcase}}.pdf">{{ post.language-in-10 }}</a><br />
+      L-in-10: <a href="slides/langin10/{{post.language-in-10 | downcase}}.pdf">{{ post.language-in-10 }}</a><br />
       {% endif %}
     </td>
     <td>{% if post.book %}<i>SMT</i> Ch. {{ post.book }} {% else %} <i>none</i> {% endif %}</td>

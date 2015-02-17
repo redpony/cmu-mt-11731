@@ -35,7 +35,7 @@ It will either report success or some error message.
 
 In this section, you will pick a screen name for the course leaderboard and tell us a little about yourself.
 
- * Edit `hw0/output.txt` so it contains your name, email address, a screen name for the course leaderboard (you are stuck with it for the semester, pick something you will like!), and list the languages that you speak or know well using their [ISO 639-2 codes](http://www.loc.gov/standards/iso639-2/php/code_list.php). The format will be self-explanatory.
+ * Edit `hw0/output.txt` so it contains your name, email address, a screen name for the course leaderboard (<span style="text-decoration: line-through;">you are stuck with it for the semester, pick something you will like!</span>), and list the languages that you speak or know well using their [ISO 639-2 codes](http://www.loc.gov/standards/iso639-2/php/code_list.php). The format will be self-explanatory.
  * Check to make sure the file is well-formed:
 
        ./check-output < output.txt

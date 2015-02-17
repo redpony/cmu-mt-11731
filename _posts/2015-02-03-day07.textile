@@ -1,7 +1,8 @@
 ---
 title: Discriminative Alignment Models
-# slides: 07.disc-align.pdf
+slides: 07-crf-align.pdf
 day: 7
+language-in-10: Bengali
 reading:
   -
     author: Blunsom and Cohn

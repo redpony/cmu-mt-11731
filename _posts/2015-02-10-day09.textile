@@ -1,6 +1,6 @@
 ---
 title: Evaluation II
-# slides: 08.eval2.pdf
+slides: MT-Automated-Evaluation-2015.pdf
 book: 8
 day: 9
 reading:

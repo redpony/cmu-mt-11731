@@ -1,8 +1,10 @@
 ---
 title: Introduction
-# slides: 01.intro.pdf
+slides:
+  - 01-intro.pdf
 day: 1
 book: 1
+language-in-10: Finnish
 reading:
   -
     author: Knight

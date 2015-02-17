@@ -1,6 +1,6 @@
 ---
 title: Probability Review
-# slides: 02.probability.pdf
+slides: 02-probability.pdf
 day: 2
 book: 3
 reading:

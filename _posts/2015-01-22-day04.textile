@@ -1,6 +1,6 @@
 ---
 title: Lexical Translation Models I
-#slides: 04.lexical.pdf
+slides: 04-model1.pdf
 day: 4
 book: 4.1-4.2, 4.5
 reading:
