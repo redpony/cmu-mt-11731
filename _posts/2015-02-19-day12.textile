@@ -3,4 +3,13 @@ title: 'Decoding: Dynamic Programming and Beam Search'
 # slides:
 day: 12
 book: 5
+reading:
+  -
+    author: Koehn et al.
+    title: Statistical Phrase-Based Translation
+    url: http://www.isi.edu/~marcu/papers/phrases-hlt2003.pdf
+  -
+    author: Mariño et al.
+    title: N-gram-based Machine Translation
+    url: http://www.aclweb.org/anthology/J/J06/J06-4004.pdf
 ---
