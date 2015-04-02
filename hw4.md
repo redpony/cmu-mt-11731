@@ -86,12 +86,13 @@ $$\begin{align\*}
 \frac{\partial \mathscr{L}(x, c, y^\*)}{\partial \mathbf{w}} = \mathbf{f}(x, c, y^\*) - \mathbf{f}(x, c, y^-)
 \end{align\*}$$
 
-The baseline set of features you are to implement is a set of <i>sparse</i> features following two feature templates, along with the four features provided for each phrase in the phrase table.
-The first conjoins the source word, the hypothesis translation, and the previous word in the target sentence. For example "src_bank_tgt_banka_prev_the=1".
-The second conjoins the source word, the hypothesis translation, and the next word in the source sentence. For example "src_bank_tgt_banka_next_the=1".
-The four additional phrase table features are the logs of the following four quantities: $p(e|f)$, $p(f|e)$, $p_{lex}(e|f)$, $p_{lex}(f|e)$.
+The baseline set of features you are to implement is a set of <i>sparse</i> features following two feature templates, along with the four features provided for each phrase in the phrase table:
 
-Note that this feature set is very sparse, yielding thousands of individual features. We recommend that you make use of "scipy.sparse.csr_matrix" in python, or the equivalent in your favorite programming language.
+ * The four default phrase table features are the logs of the following four quantities: $p(e|f)$, $p(f|e)$, $p_{lex}(e|f)$, $p_{lex}(f|e)$.
+ * A binary feature that conjoins (i) the source word, (ii) the hypothesis translation, and (iii) the previous word in the target sentence. Written as a string, a feature might be `src:bank_tgt:banka_prev:the`, and it would have a value of 1.
+ * A binary feature that conjoins (i) the source word, (ii) the hypothesis translation, and (iii) the next word in the source sentence. An example feature string might look like `src:bank_tgt:banka_next:the`, and it would have a value of 1.
+
+Note that this feature set is very sparse, yielding thousands of individual features. If you use Python, we recommend that you make use of `scipy.sparse.csr_matrix` to represent your feature vectors. There are equivalent sparse vector data types in almost every programming language.
 
 To earn 7 points on this assignment, you must **implement a the described learning algorithm using the above features**
  so that it is capable of predicting which Czech translation of a highlighted source phrase is most likely given its context.
