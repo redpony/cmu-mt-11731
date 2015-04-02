@@ -48,9 +48,11 @@ Given a phrase $x$ in a context $c$, reference $y^\*$, and a set of translation 
 
 $$\begin{align\*}
 \mathscr{L} &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - \textit{score}(x, c, y^\*) + \textit{score}(x, c, y^-)) \\\\
- &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - f(x, c, y^\*) \cdot \mathbf{w} + f(x, c, y^-) \cdot \mathbf{w}) \\\\
-  &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - (f(x, c, y^\*) - f(x, c, y^-)) \cdot \mathbf{w}) \\\\
+ &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - \mathbf{f}(x, c, y^\*) \cdot \mathbf{w} + \mathbf{f}(x, c, y^-) \cdot \mathbf{w}) \\\\
+  &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - (\mathbf{f}(x, c, y^\*) - \mathbf{f}(x, c, y^-)) \cdot \mathbf{w}) \\\\
 \end{align\*}$$
+
+where $\mathbf{f}(x, c, y^\*)$ is a function that takes a source phrase, context, and translation hypothesis and returns a vector of real-valued features and $w$ is a weight vector to be learned from training data.
 
 Intuitively, what this objective says is that the score of the right translation ($y^\*$) of $x$ in context $c$ needs to be higher than the score of all the other translations (the $y^-$) of $x$, by a margin of at least $\gamma$ (you can pick any number greater than or equal to 0 for $\gamma$). If the model picks the wrong answer, or if it picks the right answer, but its score is too close to that of a wrong answer, you will suffer a penalty.
 
@@ -63,12 +65,12 @@ where $\alpha$ is some learning rate (the optimal value of the learning rate wil
 Despite all the notation, the stochastic subgradient descent algorithm for this model is very simple: you will loop over all $(x,c,y^\*)$ tuples in the training data, and for each of these you will loop over all of the possible wrong answers (the $\mathscr{Y}(x) \setminus y^\*$), you will then compute the following quantity:
 
 $$\begin{align\*}
-\mathscr{L}(x,c,y^\*) = \max(0, \gamma - (f(x, c, y^\*) - f(x, c, y^-)) \cdot \mathbf{w})
+\mathscr{L}(x,c,y^\*) = \max(0, \gamma - (\mathbf{f}(x, c, y^\*) - \mathbf{f}(x, c, y^-)) \cdot \mathbf{w})
 \end{align\*}$$
 
-If you get 0, your model is doing the right thing on this example. If you compute any non-zero score, you need to update the weights by following the direction of steepest descent, which is given by the derivative of $\gamma - (f(x, c, y^\*) - f(x, c, y^-)) \cdot \mathbf{w}$ with respect to $\mathbf{w}$. Fortunately, this expression is very simple to differentiate: it is just a constant value plus a dot product, and the derivative of $c + \mathbf{a}\cdot\mathbf{b}$ with respect to $\mathbf{b}$ is just $\mathbf{a}$, so the derivative you need to compute is simply
+If you get 0, your model is doing the right thing on this example. If you compute any non-zero score, you need to update the weights by following the direction of steepest descent, which is given by the derivative of $\gamma - (\mathbf{f}(x, c, y^\*) - \mathbf{f}(x, c, y^-)) \cdot \mathbf{w}$ with respect to $\mathbf{w}$. Fortunately, this expression is very simple to differentiate: it is just a constant value plus a dot product, and the derivative of $c + \mathbf{a}\cdot\mathbf{b}$ with respect to $\mathbf{b}$ is just $\mathbf{a}$, so the derivative you need to compute is simply
 $$\begin{align\*}
-\frac{\partial \mathscr{L}}{\partial \mathbf{w}} = f(x, c, y^\*) - f(x, c, y^-)
+\frac{\partial \mathscr{L}}{\partial \mathbf{w}} = \mathbf{f}(x, c, y^\*) - \mathbf{f}(x, c, y^-)
 \end{align\*}$$
 
 TODO: Describe baseline features
