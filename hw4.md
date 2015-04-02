@@ -39,30 +39,46 @@ We have provided you with a trivial ranking algorithm that simply sorts the tran
 You will additionally be given several hundred thousand parallel Czech-English sentences along with some training data extracted therefrom.
 For convenience, we also provide dependency parses and POS tags for each sentence in training set.
 
-The baseline you must implement (or beat) is to build a linear discriminative classifier trained to optimize the hinge loss function.
-Given a phrase $x$ in a context $c$, reference $y^\*$, and a set of translation candidates $\mathscr{Y}(x)$, the loss is:
+At test time, you will be given a new set of tuples $(x, c)$ and asked to predict, for each of these, the corresponding $y$ from among all the translation options for $x$ that you find in the provided phrase table (we denote the set of translation options as $\mathscr{Y}(x)$).
+
+## Baseline
+
+The baseline you must implement (or beat) is to build a discriminative linear classifier trained to optimize the hinge loss function. You are also required to implement a few basic context-sensitive features (we discuss them below). The baseline model is defined as follows.
+Given a phrase $x$ in a context $c$, reference $y^\*$, and a set of translation candidates $\mathscr{Y}(x)$, the baseline objective is to minimize the following:
 
 $$\begin{align\*}
-\mathscr{L} &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - f(x, c, y^\*) \cdot \mathbf{w} + f(x, c, y^-) \cdot \mathbf{w}) \\\\
+\mathscr{L} &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - \textit{score}(x, c, y^\*) + \textit{score}(x, c, y^-)) \\\\
+ &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - f(x, c, y^\*) \cdot \mathbf{w} + f(x, c, y^-) \cdot \mathbf{w}) \\\\
+  &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - (f(x, c, y^\*) - f(x, c, y^-)) \cdot \mathbf{w}) \\\\
 \end{align\*}$$
 
-Here $\gamma$ is the size of the margin that we desire between the score of $y^\*$ and any other option, and $f(x, c, y)$ is a function that returns a vector of features representative of the phrase pair $(x, y)$ in the context $c$.
+Intuitively, what this objective says is that the score of the right translation ($y^\*$) of $x$ in context $c$ needs to be higher than the score of all the other translations (the $y^-$) of $x$, by a margin of at least $\gamma$ (you can pick any number greater than or equal to 0 for $\gamma$). If the model picks the wrong answer, or if it picks the right answer, but its score is too close to that of a wrong answer, you will suffer a penalty.
 
-Your decoder should optimize this objective function using stochastic gradient descent. That is you should iteratively perform the update
+Your learner should optimize this objective function using stochastic subgradient descent. That is you should iteratively perform the update
 
-$$\mathbf{w} = \mathbf{w} - \alpha \cdot \frac{\partial \mathscr{L}}{\partial \mathbf{w}}$$
+$$\mathbf{w}_{(i+1)} = \mathbf{w}_{(i)} - \alpha \cdot \frac{\partial \mathscr{L}}{\partial \mathbf{w}}$$
 
-where $\alpha$ is some learning rate.
+where $\alpha$ is some learning rate (the optimal value of the learning rate will depend on the features you use, but usually a value of 0.1 or 0.01 work well).
 
-At test time, you will be given a new set of tuples $(x, c)$ and asked to predict the corresponding $y$.
-You do this by simply returning a list of all of the $y$s in $\mathscr{Y}(x)$, sorted by $f(x, c, y) \cdot \mathbf{w})$.
+Despite all the notation, the stochastic subgradient descent algorithm for this model is very simple: you will loop over all $(x,c,y^*)$ tuples in the training data, and for each of these you will loop over all of the possible wrong answers (the $\mathscr{Y}(x) \setminus y^\*$), you will then compute the following quantity:
 
-The default decoder uses only four features, all of which are phrase local: $p(e|f)$, $p(f|e)$, $p_{lex}(e|f)$, and $p_{lex}(f|e)$. Furthermore, it uses the simple weight vector $(1\;0\;0\;0)$. Therefore it always simply sortes the candidates by $p(e|f)$.
+$$\begin{align\*}
+\mathscr{L}(x,c,y^*) = \max(0, \gamma - (f(x, c, y^\*) - f(x, c, y^-)) \cdot \mathbf{w})
+\end{align\*}$$
+
+If you get 0, your model is doing the right thing on this example. If you compute any non-zero score, you need to update the weights by following the direction of steepest descent, which is given by the derivative of $\gamma - (f(x, c, y^\*) - f(x, c, y^-)) \cdot \mathbf{w}$ with respect to $\mathbf{w}$. Fortunately, this expression is very simple to differentiate: it is just a constant value plus a dot product, and the derivative of $c + \mathbf{a}\cdot\mathbf{b}$ with respect to $\mathbf{b}$ is just $\mathbf{a}$, so the derivative you need to compute is simply
+$$\begin{align\*}
+\frac{\partial \mathscr{L}}{\partial \mathbf{w}} = f(x, c, y^\*) - f(x, c, y^-)
+\end{align\*}$$
 
 TODO: Describe baseline features
 
 To earn 7 points on this assignment, you must **implement a hinge-loss perceptron using the above features**
  so that it is capable of predicting which Czech translation of a highlighted source phrase is most likely given its context.
+
+## Default model
+
+To help get you started, we are providing a default model that four important features, $\log p(e|f)$, $\log p(f|e)$, $\log p_{lex}(e|f)$, and $\log p_{lex}(f|e)$. Furthermore, it uses the simple weight vector $(1\;0\;0\;0)$. Therefore it always simply sorts the candidates by $p(e \mid f)$. Thus, the default model is not sensitive to context.
 
 **Implementation hints**: 
 
@@ -72,6 +88,7 @@ As discussed above, our baseline reranker simply sorts the candidates by $p(e|f)
 
 Here are some ideas:
 
+ * Add $\ell_1$ or $\ell_2$ regularization to prevent the learner from assigning too much importance to rare features.
  * Use convolutional neural networks to automatically learn to discriminate translations from context ([paper](http://arxiv.org/pdf/1503.02357v1.pdf))
  * Leverage dependency and POS information to predict case ([paper](http://aclweb.org/anthology/D/D13/D13-1174.pdf))
  * Use lexical context and syntactic information ([paper](https://aclweb.org/anthology/W/W08/W08-0302.pdf))
