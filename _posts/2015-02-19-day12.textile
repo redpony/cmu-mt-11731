@@ -1,8 +1,9 @@
 ---
 title: 'Decoding: Dynamic Programming and Beam Search'
-# slides:
+slides: pbmt2-2015.pdf
 day: 12
 book: 5
+language-in-10: Hungarian
 reading:
   -
     author: Koehn et al.

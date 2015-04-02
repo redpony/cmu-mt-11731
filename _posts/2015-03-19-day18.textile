@@ -1,5 +1,10 @@
 ---
-title: Syntax decoding
+title: Synchronous parsing
 # slides:
 day: 18
+reading:
+  -
+    title: Two monolingual parses are better than one (synchronous parse)
+    author: Dyer
+    url: http://www.aclweb.org/anthology/N/N10/N10-1033.pdf
 ---

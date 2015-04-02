@@ -1,0 +1,20 @@
+---
+title: Morphology in MT
+slides: morphology.pdf
+day: 19
+reading:
+  -
+    title: Factored Translation Models
+    author: Koehn and Hoang
+    url: http://www.aclweb.org/anthology/D/D07/D07-1.pdf#page=902
+
+  -
+    title: Applying Morphology Generation Models to Machine Translation
+    author: Toutanova et al.
+    url: http://anthology.aclweb.org/P/P08/P08-1.pdf#page=558
+
+  -
+    title: Translating into Morphologically Rich Languages with Synthetic Phrases
+    author: Chahuneau et al.
+    url: http://aclweb.org/anthology//D/D13/D13-1174.pdf
+---

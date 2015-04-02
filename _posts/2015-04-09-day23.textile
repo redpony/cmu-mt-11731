@@ -1,0 +1,14 @@
+---
+title: Neural MT I
+# slides:
+day: 23
+reading:
+  -
+    url: ACL'14
+    title: Fast and Robust Neural Network Joint Models for Statistical Machine Translation
+    author: Devlin, et al.
+  -
+    url: ACL'14
+    author: Kalchbrenner, et al.
+    title: A Convolutional Neural Network for Modelling Sentences
+---

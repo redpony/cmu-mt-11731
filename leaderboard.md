@@ -37,12 +37,12 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
         <span class="small">Accuracy</span>
       </th>
       <th valign="top">
-        <!--<a href="hw3.html">-->#3<!--</a>--><br/>
-        <span class="small"><!--Model Score--></span>
+        <a href="javascript:;" onclick="resort(4, 0); drawLeaderboard(); return false">#3</a><br/>
+        <span class="small">Model Score</span>
       </th>
       <th valign="top">
-        <!--<a href="hw4.html">-->#4<!--</a>--><br/>
-        <span class="small"><!--METEOR--></span>
+        <a href="javascript:;" onclick="resort(5, 0); drawLeaderboard(); return false">#4</a><br/>
+        <span class="small">MRR</span>
       </th>
     </tr>
   </thead>

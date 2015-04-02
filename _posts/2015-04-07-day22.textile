@@ -1,0 +1,5 @@
+---
+title: Computer assisted translation
+# slides:
+day: 22
+---

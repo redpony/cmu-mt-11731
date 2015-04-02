@@ -43,20 +43,24 @@ You should prepare three to six content slides for your presentation which are d
 
 Recommend resources include: [Ethnologue](http://www.ethnologue.com/), [Omniglot](http://www.omniglot.com/), [The World Atlas of Language Structures](http://wals.info/), the [Machine Translation Archive](http://www.mt-archive.info), previous courses that have used this assignment at [Johns Hopkins](http://mt-class.org) and [Columbia](https://sites.google.com/site/comse6998machinetranslation/language-in-10-minutes), and native speakers.
 
-Presentations will be graded on thoroughness, clarity, and conciseness.
+Presentations will be graded on thoroughness, clarity, and conciseness. A [sample presentation](slides/langin10/finnish.pdf) was given by the TA in class.
 
 ## Course Project (40 points)
 
-Your course project will be a substantial research effort carried out by each student or groups of students (max group size = 3). It should have clearly articulated purpose, evaluation plan.
+Your course project will be a substantial research effort carried out by each student or groups of students (max group size = 3). It should have clearly articulated purpose, evaluation plan. A sample project proposal can be found [here](slides/sample-proposal.pdf).
 
 The milestones will be:
- * Pre-project proposal meeting with instructor (**2 points**)
- * Project proposal (**8 points**; 2 pages), due February 28
+
+ * Project proposal draft (**5 points**; 2 pages), due February 10
    * What problem are you going to solve? (You must give a concrete *example* illustrating the problem you are trying to solve.)
    * What is your proposed solution?
    * What is your implementation plan?
    * How will you evaluate your results?
- * Final project report (**20 points**; 8 pages), due May 8
+ * Project proposal meeting with instructor (**2 points**)
+ * Final project proposal (**8 points**), due February 24
+   * Revise idea and scope of project
+   * Incorporate feedback from instructor meeting
+ * Final project report (**15 points**; 8 pages), due May 8
    * Explain your implementation and evaluation.
    * Discuss prior and related work.
    * Analyze your results.

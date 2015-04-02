@@ -1,5 +1,20 @@
 ---
 title: Discriminative Training I
-# slides:
+slides: discmt1-pro.pdf
+language-in-10: Siraya
 day: 13
+reading:
+  -
+    title: Discriminative Training and Maximum Entropy Models for Statistical Machine Translation
+    author: Och and Ney
+    url: http://acl.ldc.upenn.edu/acl2002/MAIN/pdfs/Main074.pdf
+  -
+    title: Lattice-based Minimum Error Rate Training for Statistical Machine Translation
+    author: Macherey et al.
+    url: http://www.aclweb.org/anthology-new/D/D08/D08-1076.pdf
+  -
+    title: Minimum Risk Annealing for Training Log-Linear Models
+    author: Smith and Eisner
+    url: http://www.ccs.neu.edu/home/dasmith/dtrain_acl_2006.pdf
+
 ---

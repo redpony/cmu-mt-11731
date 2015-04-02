@@ -1,0 +1,18 @@
+---
+title: System combination
+# slides:
+day: 25
+reading:
+  -
+    title: Combining outputs from multiple machine translation systems
+    author: Rosti et al.
+    url: http://acl.ldc.upenn.edu/N/N07/N07-1029.pdf
+  -
+    title: Voting on <i>N</i>-grams for Machine Translation System Combination
+    author: Heafield and Lavie
+    url: http://www.cs.cmu.edu/~alavie/papers/AMTA-10-Heafield.pdf
+  -
+    title: A post-processing system to yield reduced word error rates; Recognizer Output Voting Error Reduction (ROVER)
+    author: Fiscus
+    url: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=659110
+---

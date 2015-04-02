@@ -9,7 +9,7 @@
  * [Homework 0]({{site.baseurl}}/hw0.html)
  * [Homework 1]({{site.baseurl}}/hw1.html)
  * [Homework 2]({{site.baseurl}}/hw2.html)
- * Homework 3
+ * [Homework 3]({{site.baseurl}}/hw3.html)
  * Homework 4
 {% endcapture %}
 {{ stuff | markdownify }}
