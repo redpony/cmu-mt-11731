@@ -73,7 +73,7 @@ $$\begin{align\*}
 
 TODO: Describe baseline features
 
-To earn 7 points on this assignment, you must **implement a hinge-loss perceptron using the above features**
+To earn 7 points on this assignment, you must **implement a the described learning algorithm using the above features**
  so that it is capable of predicting which Czech translation of a highlighted source phrase is most likely given its context.
 
 ## Default model
