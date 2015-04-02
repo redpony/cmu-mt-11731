@@ -6,9 +6,9 @@ title: Homework 4
 
 **Due 11:59pm on Tuesday, April 21, 2015**
 
-In phrase based translation, the decoder makes use of a **phrase table** which contains all possible translations learned from a parallel corpus into the target language, along with **scores** that give information about how probable the translation is. For example, in an English–Czech MT system, the phrase table might tell us that there are two translations for the English word *bank* into Czech: *banka* and *břeh* (corresponding to the financial institution sense and river bank sense, respectively), with translation probabilities $p(\text{banka} \mid \text{bank}) = 0.8$ and $p(\text{břeh} \mid \text{bank}) = 0.2$. As we also saw in lectures, these probabilities are usually estimated to be the relative frequencies that each source phrase was translated into each target phrase in the parallel corpus used to train the translation model. These scores are then combined along with a target language model and other features to find a good translation of a complete sentence.
+In phrase based translation, the decoder makes use of a **phrase table** which contains translations of phrases in the source language into the target language, along with **scores** that give information about how probable or "good" the translation option is likely to be. For example, in an English–Czech MT system, the phrase table might tell us that there are two translations for the English word *bank* into Czech: *banka* and *břeh* (corresponding to the financial institution sense and river bank sense, respectively), with translation probabilities $p(\text{banka} \mid \text{bank}) = 0.8$ and $p(\text{břeh} \mid \text{bank}) = 0.2$.  These probabilities are usually assumed to be the relative frequencies with which each source phrase was translated into each target phrase in the parallel corpus used to train the translation model.
 
-Let us consider the problem of translating the following two sentences into Czech:
+Let us consider the problem of translating the following two English sentences into Czech:
 
 <center>i went to the <b>bank</b> to deposit my paycheck .</center>
 <br />
@@ -17,7 +17,7 @@ Let us consider the problem of translating the following two sentences into Czec
 <br />
 
 Upon looking at these two input sentences, however, we might want to rethink the appropriateness of using context-independent relative frequencies to estimate the translation probabilities.
-In the former sentence, the correction translation of "bank" is seems likely to be <i>banka</i> (financial institution), just like the phrase table predicts.
+In the former sentence, the correction translation of "bank" is seems likely to be <i>banka</i> (financial institution), just like our example phrase table predicts.
 In the latter, however, it's more likely to be <i>břeh</i> (river bank) despite the translation table probabilities.
 
 **In this homework, your task is to use the *context* in the source sentence to rerank the translation options of the highlighted word.**
