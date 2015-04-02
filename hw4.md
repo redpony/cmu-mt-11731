@@ -63,7 +63,7 @@ where $\alpha$ is some learning rate (the optimal value of the learning rate wil
 Despite all the notation, the stochastic subgradient descent algorithm for this model is very simple: you will loop over all $(x,c,y^\*)$ tuples in the training data, and for each of these you will loop over all of the possible wrong answers (the $\mathscr{Y}(x) \setminus y^\*$), you will then compute the following quantity:
 
 $$\begin{align\*}
-\mathscr{L}(x,c,y^*) = \max(0, \gamma - (f(x, c, y^\*) - f(x, c, y^-)) \cdot \mathbf{w})
+\mathscr{L}(x,c,y^\*) = \max(0, \gamma - (f(x, c, y^\*) - f(x, c, y^-)) \cdot \mathbf{w})
 \end{align\*}$$
 
 If you get 0, your model is doing the right thing on this example. If you compute any non-zero score, you need to update the weights by following the direction of steepest descent, which is given by the derivative of $\gamma - (f(x, c, y^\*) - f(x, c, y^-)) \cdot \mathbf{w}$ with respect to $\mathbf{w}$. Fortunately, this expression is very simple to differentiate: it is just a constant value plus a dot product, and the derivative of $c + \mathbf{a}\cdot\mathbf{b}$ with respect to $\mathbf{b}$ is just $\mathbf{a}$, so the derivative you need to compute is simply
