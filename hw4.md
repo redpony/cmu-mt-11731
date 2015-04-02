@@ -6,7 +6,7 @@ title: Homework 4
 
 **Due 11:59pm on Tuesday, April 21, 2015**
 
-In phrase based translation, the decoder makes use of a **phrase table** which contains translations of phrases in the source language into the target language, along with **scores** that give information about how probable or "good" the translation option is likely to be. For example, in an English–Czech MT system, the phrase table might tell us that there are two translations for the English word *bank* into Czech: *banka* and *břeh* (corresponding to the financial institution sense and river bank sense, respectively), with translation probabilities $p(\text{banka} \mid \text{bank}) = 0.8$ and $p(\text{břeh} \mid \text{bank}) = 0.2$.  These probabilities are usually assumed to be the relative frequencies with which each source phrase was translated into each target phrase in the parallel corpus used to train the translation model.
+In phrase based translation, the decoder makes use of a **phrase table** which contains translations of phrases in the source language into the target language, along with **scores** that give information about how probable or "good" the translation option is likely to be. For example, in an English–Czech MT system, the phrase table might tell us that there are two translations for the English word *bank* into Czech: *banka* and *břeh* (corresponding to the financial institution sense and river bank sense, respectively), with translation probabilities $p(\text{banka} \mid \text{bank}) = 0.8$ and $p(\text{břeh} \mid \text{bank}) = 0.2$.
 
 Let us consider the problem of translating the following two English sentences into Czech:
 
