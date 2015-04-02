@@ -25,7 +25,7 @@ In the latter, however, it's more likely to be <i>břeh</i> (river bank) despite
 
 **Your task is to use the context in the source sentence to rerank the translation options of the highlighted word.**
 
-This assignment will be graded by <i>mean reciprocol rank</i> (MRR), which captures the intuition that we want the "correct" translation to be highly ranked, even if it is not first in the reranked list.
+This assignment will be graded by <i>mean reciprocol rank</i> (MRR), which captures the intuition that we want the "correct" translation (as determined by a reference sentence translation) to be highly ranked, even if it is not first in the reranked list.
 If the reference is the $n$th item in your reranked list, you will recieve a score of $\frac{1}{n}$ for that sentence.
 Your score is then averaged across all sentences in the test set, yielding a number between 0 (bad) and 1 (good).
 
@@ -43,8 +43,9 @@ At test time, you will be given a new set of tuples $(x, c)$ and asked to predic
 
 ## Baseline
 
-The baseline you must implement (or beat) is to build a discriminative linear classifier trained to optimize the hinge loss function. You are also required to implement a few basic context-sensitive features (we discuss them below). The baseline model is defined as follows.
-Given a phrase $x$ in a context $c$, reference $y^\*$, and a set of translation candidates $\mathscr{Y}(x)$, the baseline objective is to minimize the following:
+The baseline you must implement (or beat) is a linear model that assigns a score to each translation in a phrase table for a source language phrase *in the context of a full sentence*. That is, $\textit{score}(x,c,y) = \mathbf{f}(x,c,y) \cdot \mathbf{w}$. For the baseline model, you are required to do two things: (i) engineer the feature functions $\mathbf{f}(x,c,y)$ (we discuss the required features below) and (ii) learn the weight vector $\mathbf{w}$ from a corpus of a training examples which pair the sources phrases ($x$) and contexts ($c$) with a correct translation ($y^\*$).
+
+Since our training data does not provide scores directly (it just tells you what translation is correct in context), your scoring function should be learned according to the following objective:
 
 $$\begin{align\*}
 \mathscr{L} &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - \textit{score}(x, c, y^\*) + \textit{score}(x, c, y^-)) \\\\
