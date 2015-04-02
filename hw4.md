@@ -19,6 +19,7 @@ Let us consider the problem of translating the following two English sentences i
 Upon looking at these two input sentences, however, we might want to rethink the appropriateness of using context-independent relative frequencies to estimate the translation probabilities.
 In the former sentence, the correction translation of "bank" is seems likely to be <i>banka</i> (financial institution), just like our example phrase table predicts.
 In the latter, however, it's more likely to be <i>břeh</i> (river bank) despite the translation table probabilities.
+This idea was first described in [Carpuat and Wu (2007)](http://www.cs.ust.hk/~marine/papers/CarpuatWu_EMNLP2007.pdf), but has only recently risen to prominence.
 
 **In this homework, your task is to use the *context* in the source sentence to rerank the translation options of the highlighted word.**
 
@@ -111,6 +112,7 @@ Here are some ideas:
  * Use convolutional neural networks to automatically learn to discriminate translations from context ([paper](http://arxiv.org/pdf/1503.02357v1.pdf))
  * Leverage dependency and POS information to predict case ([paper](http://aclweb.org/anthology/D/D13/D13-1174.pdf))
  * Use lexical context and syntactic information ([paper](https://aclweb.org/anthology/W/W08/W08-0302.pdf))
+ * Learn bilingual word vectors from [parallel data]({{site.baseurl}}/parallel.encs) ([paper](http://www.cs.cmu.edu/~mfaruqui/papers/eacl14-vectors.pdf))
 
 ## Ground Rules
 
