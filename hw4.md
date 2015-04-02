@@ -6,7 +6,7 @@ title: Homework 4
 
 **Due 11:59pm on Tuesday, April 21, 2015**
 
-In phrase based translation, the decoder makes use of a **phrase table** which contains translations of phrases in the source language into the target language, along with **scores** that give information about how probable or "good" the translation option is likely to be. For example, in an English–Czech MT system, the phrase table might tell us that there are two translations for the English word *bank* into Czech: *banka* and *břeh* (corresponding to the financial institution sense and river bank sense, respectively), with translation probabilities $p(\text{banka} \mid \text{bank}) = 0.8$ and $p(\text{břeh} \mid \text{bank}) = 0.2$.
+In phrase based translation, the decoder makes use of a **phrase table** which contains translations of phrases in the source language into the target language, along with **scores** that give information about how probable or "good" the translation option is likely to be. For example, in an English–Czech MT system, the phrase table might tell us that there are two translations for the English word *bank* into Czech: *banka* and *břeh* (corresponding to the financial institution sense and river bank sense, respectively), with translation probabilities $p(\text{banka} \mid \text{bank}) = 0.8$ and $p(\text{břeh} \mid \text{bank}) = 0.2$.  These probabilities are usually assumed to be the relative frequencies with which each source phrase was translated into each target phrase in the parallel corpus used to train the translation model.
 
 Let us consider the problem of translating the following two English sentences into Czech:
 
@@ -16,11 +16,11 @@ Let us consider the problem of translating the following two English sentences i
 <center>the log rolled down the <b>bank</b> and into the water .</center>
 <br />
 
-Upon looking at these two input sentences, however, we might want to rethink the appropriateness of using context-independent relative frequencies to estimate the phrase translation probabilities.
+Upon looking at these two input sentences, however, we might want to rethink the appropriateness of using context-independent relative frequencies to estimate the translation probabilities.
 In the former sentence, the correction translation of "bank" is seems likely to be <i>banka</i> (financial institution), just like our example phrase table predicts.
-In the latter, however, it's more likely to be <i>břeh</i> (river bank) despite the translation table probabilities. Although we made up these probabilities for this example, they illustrate that a static, context-independent probability might be a misleading feature.
+In the latter, however, it's more likely to be <i>břeh</i> (river bank) despite the translation table probabilities.
 
-**In this homework, your task is to use the *context* in the source sentence to rescore the translation options of the highlighted word.**
+**In this homework, your task is to use the *context* in the source sentence to rerank the translation options of the highlighted word.**
 
 This assignment will be graded by <i>mean reciprocol rank</i> (MRR), which captures the intuition that we want the "correct" translation (as determined by a reference sentence translation) to be highly ranked, even if it is not first in the reranked list.
 If the reference is the $n$th item in your reranked list, you will recieve a score of $\frac{1}{n}$ for that sentence.
@@ -42,6 +42,16 @@ For convenience (and to inspire you!), we also provide dependency parses and POS
 We are providing you with training, development, and blind test datasets consisting of tuples $(x,c,y^\*)$ of an English source phrase ($x$), the English sentential context ($c$), and a Czech reference translation of the English source phrase ($y^\*$). You will also be provided with an English–Czech phrase table ($\mathscr{Y}$) which is guaranteed to contain the English source phrase and the Czech target phrase for every tuple we provide (of course, in a real system, you would need to deal with OOV words at test time).
 
 At test time, you will be given a new set of tuples $(x, c)$ and asked to predict, for each of these, the corresponding $y$ from among all the translation options for $x$ that you find in the provided phrase table (we denote the set of translation options as $\mathscr{Y}(x)$).
+
+## Data Formats
+
+Training, dev, and test sets are all given in the same file format.
+Each line will contain one training sentence split into three parts using a triple pipe ("|||") as the delimiter.
+The first part is the <i>left context</i>, the middle part is the phrase of interest, whose Czech translation we wish to predict, and the third is the <i>right context</i>.
+For example:
+<center>there are ten countries  |||  along  |||  this river .</center>
+
+Here "along" is the word we wish to translate into Czech. The reference translations are given in a corresponding file. For this example, the correct translation is <i>podél</i>.
 
 ## Baseline
 
@@ -76,7 +86,12 @@ $$\begin{align\*}
 \frac{\partial \mathscr{L}(x, c, y^\*)}{\partial \mathbf{w}} = \mathbf{f}(x, c, y^\*) - \mathbf{f}(x, c, y^-)
 \end{align\*}$$
 
-TODO: Describe baseline features
+The baseline set of features you are to implement is a set of <i>sparse</i> features following two feature templates, along with the four features provided for each phrase in the phrase table.
+The first conjoins the source word, the hypothesis translation, and the previous word in the target sentence. For example "src_bank_tgt_banka_prev_the=1".
+The second conjoins the source word, the hypothesis translation, and the next word in the source sentence. For example "src_bank_tgt_banka_next_the=1".
+The four additional phrase table features are the logs of the following four quantities: $p(e|f)$, $p(f|e)$, $p_{lex}(e|f)$, $p_{lex}(f|e)$.
+
+Note that this feature set is very sparse, yielding thousands of individual features. We recommend that you make use of "scipy.sparse.csr_matrix" in python, or the equivalent in your favorite programming language.
 
 To earn 7 points on this assignment, you must **implement a the described learning algorithm using the above features**
  so that it is capable of predicting which Czech translation of a highlighted source phrase is most likely given its context.
@@ -84,8 +99,6 @@ To earn 7 points on this assignment, you must **implement a the described learni
 ## Default model
 
 To help get you started, we are providing a default model that four important features, $\log p(e|f)$, $\log p(f|e)$, $\log p_{lex}(e|f)$, and $\log p_{lex}(f|e)$. Furthermore, it uses the simple weight vector $(1\;0\;0\;0)$. Therefore it always simply sorts the candidates by $p(e \mid f)$. Thus, the default model is not sensitive to context.
-
-**Implementation hints**: 
 
 ## The Challenge
 
