@@ -36,11 +36,16 @@ We have provided you with a trivial ranking algorithm that simply sorts the tran
 You will additionally be given several hundred thousand parallel Czech–English sentences along with some training data extracted therefrom.
 For convenience (and to inspire you!), we also provide dependency parses and POS tags for each input sentence in training, dev, and test sets.
 
+
+### Provided data
+
+We are providing you with training, development, and blind test datasets consisting of tuples $(x,c,y^\*)$ of an English source phrase ($x$), the English sentential context ($c$), and a Czech reference translation of the English source phrase ($y^\*$). You will also be provided with an English–Czech phrase table ($\mathscr{Y}$) which is guaranteed to contain the English source phrase and the Czech target phrase for every tuple we provide (of course, in a real system, you would need to deal with OOV words at test time).
+
 At test time, you will be given a new set of tuples $(x, c)$ and asked to predict, for each of these, the corresponding $y$ from among all the translation options for $x$ that you find in the provided phrase table (we denote the set of translation options as $\mathscr{Y}(x)$).
 
 ## Baseline
 
-The baseline you must implement (or beat) is a linear model that assigns a score to each translation in a phrase table for a source language phrase *in the context of a full sentence*. That is, the baseline model assigns a score to a translation option in a source language context as $\textit{score}(x,c,y) = \mathbf{f}(x,c,y) \cdot \mathbf{w}$. For the baseline model, you are required to do two things: (i) engineer the feature functions $\mathbf{f}(x,c,y)$ (we discuss the required features below) and (ii) learn the weight vector $\mathbf{w}$ from a corpus of a training examples which pair the sources phrases ($x$) and contexts ($c$) with a correct translation ($y^\*$).
+The baseline you must implement (or beat) is a linear model that assigns a score to each phrase translation in the phrase table for a source language phrase *in the context of a full sentence*. That is, the baseline model assigns a score to a translation option in a source language context as $\textit{score}(x,c,y) = \mathbf{f}(x,c,y) \cdot \mathbf{w}$. For the baseline model, you are required to do two things: (i) engineer the feature functions $\mathbf{f}(x,c,y)$ (we discuss the required features below) and (ii) learn the weight vector $\mathbf{w}$ from a corpus of a training examples which pair the sources phrases ($x$) and contexts ($c$) with a correct translation ($y^\*$).
 
 If the training data we provided had "reference scores", we could use linear regression to solve this problem. However, all we know is what translation was used in various different contexts (and of course, what other translations the model could have used—the phrase table). Therefore, to estimate the parameters of the scoring function, we will optimize the following **pairwise ranking loss**:
 
