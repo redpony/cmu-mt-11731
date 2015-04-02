@@ -16,11 +16,11 @@ Let us consider the problem of translating the following two English sentences i
 <center>the log rolled down the <b>bank</b> and into the water .</center>
 <br />
 
-Upon looking at these two input sentences, however, we might want to rethink the appropriateness of using context-independent relative frequencies to estimate the translation probabilities.
+Upon looking at these two input sentences, however, we might want to rethink the appropriateness of using context-independent relative frequencies to estimate the phrase translation probabilities.
 In the former sentence, the correction translation of "bank" is seems likely to be <i>banka</i> (financial institution), just like our example phrase table predicts.
-In the latter, however, it's more likely to be <i>břeh</i> (river bank) despite the translation table probabilities.
+In the latter, however, it's more likely to be <i>břeh</i> (river bank) despite the translation table probabilities. Although we made up these probabilities for this example, they illustrate that a static, context-independent probability might be a misleading feature.
 
-**In this homework, your task is to use the *context* in the source sentence to rerank the translation options of the highlighted word.**
+**In this homework, your task is to use the *context* in the source sentence to rescore the translation options of the highlighted word.**
 
 This assignment will be graded by <i>mean reciprocol rank</i> (MRR), which captures the intuition that we want the "correct" translation (as determined by a reference sentence translation) to be highly ranked, even if it is not first in the reranked list.
 If the reference is the $n$th item in your reranked list, you will recieve a score of $\frac{1}{n}$ for that sentence.
