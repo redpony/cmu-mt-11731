@@ -48,18 +48,18 @@ The baseline you must implement (or beat) is a linear model that assigns a score
 Since our training data does not provide scores directly (it just tells you what translation is correct in context), your scoring function should be learned according to the following objective:
 
 $$\begin{align\*}
-\mathscr{L} &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - \textit{score}(x, c, y^\*) + \textit{score}(x, c, y^-)) \\\\
+\mathscr{L}(x, c, y^\*) &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - \textit{score}(x, c, y^\*) + \textit{score}(x, c, y^-)) \\\\
  &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - \mathbf{f}(x, c, y^\*) \cdot \mathbf{w} + \mathbf{f}(x, c, y^-) \cdot \mathbf{w}) \\\\
   &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - (\mathbf{f}(x, c, y^\*) - \mathbf{f}(x, c, y^-)) \cdot \mathbf{w}) \\\\
 \end{align\*}$$
 
-where $\mathbf{f}(x, c, y^\*)$ is a function that takes a source phrase, context, and translation hypothesis and returns a vector of real-valued features and $w$ is a weight vector to be learned from training data.
+where $\mathbf{f}(x, c, y^\*)$ is a function that takes a source phrase, context, and translation hypothesis and returns a vector of real-valued features and $w$ is a weight vector to be learned from training data. Here $\mathscr{L}(x, c, y^\*)$ is <i>per-instance</i> loss, which should be summed over all training instances to calculate the <i>total corpus loss</i>.
 
 Intuitively, what this objective says is that the score of the right translation ($y^\*$) of $x$ in context $c$ needs to be higher than the score of all the other translations (the $y^-$) of $x$, by a margin of at least $\gamma$ (you can pick any number greater than or equal to 0 for $\gamma$). If the model picks the wrong answer, or if it picks the right answer, but its score is too close to that of a wrong answer, you will suffer a penalty.
 
 Your learner should optimize this objective function using stochastic subgradient descent. That is you should iteratively perform the update
 
-$$\mathbf{w}_{(i+1)} = \mathbf{w}_{(i)} - \alpha \cdot \frac{\partial \mathscr{L}}{\partial \mathbf{w}}$$
+$$\mathbf{w}_{(i+1)} = \mathbf{w}_{(i)} - \alpha \cdot \frac{\partial \mathscr{L}(x, c, y^\*)}{\partial \mathbf{w}}$$
 
 where $\alpha$ is some learning rate (the optimal value of the learning rate will depend on the features you use, but usually a value of 0.1 or 0.01 work well).
 
@@ -71,7 +71,7 @@ $$\begin{align\*}
 
 If you get 0, your model is doing the right thing on this example. If you compute any non-zero score, you need to update the weights by following the direction of steepest descent, which is given by the derivative of $\gamma - (\mathbf{f}(x, c, y^\*) - \mathbf{f}(x, c, y^-)) \cdot \mathbf{w}$ with respect to $\mathbf{w}$. Fortunately, this expression is very simple to differentiate: it is just a constant value plus a dot product, and the derivative of $c + \mathbf{a}\cdot\mathbf{b}$ with respect to $\mathbf{b}$ is just $\mathbf{a}$, so the derivative you need to compute is simply
 $$\begin{align\*}
-\frac{\partial \mathscr{L}}{\partial \mathbf{w}} = \mathbf{f}(x, c, y^\*) - \mathbf{f}(x, c, y^-)
+\frac{\partial \mathscr{L}(x, c, y^\*)}{\partial \mathbf{w}} = \mathbf{f}(x, c, y^\*) - \mathbf{f}(x, c, y^-)
 \end{align\*}$$
 
 TODO: Describe baseline features
@@ -108,4 +108,5 @@ Here are some ideas:
     * `hw4/README.md` - a brief description of the algorithms you tried.
     * `hw4/...` - your source code and revision history. We want to see evidence of *regular progress* over the course of the project. You don't have to `git push` to the public repository unless you want to, but you should be committing changes with `git add` and `git commit`. We expect to see evidence that you are trying things out and learning from what you see.
 
-You do not need any other data than what is provided. **You should feel free to use additional codebases and libraries except for those expressly intended to decode machine translation models**. If you would like to base your solution on finite-state toolkits or generic solvers for traveling salesman problems or integer linear programming, that is fine. But machine translation software including (but not limited to) Moses, `cdec`, Joshua, or phrasal is off limits. You may of course inspect these systems if you want to understand how they work. But be warned: they are generally quite complicated because they provide a great deal of other functionality that is not the focus of this assignment. It is possible to complete the assignment with a quite modest amount of python code. If you aren't sure whether something is permitted, ask us.
+You do not need any other data than what is provided. **You should feel free to use additional codebases and libraries. Nothing is off limits here -- the sky is the limit!**
+You may use other sources of data if you wish, provided that you notify the class via Piazza.
