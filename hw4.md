@@ -6,7 +6,7 @@ title: Homework 4
 
 **Due 11:59pm on Tuesday, April 21, 2015**
 
-In phrase based translation, the decoder makes use of a **phrase table** which contains all possible translations learned from a parallel corpus into the target language, along with **scores** that give information about how probable the translation is. For example, in an English-Czech MT system, the phrase table might tell us that there are two translations for the English word *bank* into Czech: *banka* and *břeh* (corresponding to the financial institution sense and river bank sense, respectively), with translation probabilities $p(\text{banka} \mid \text{bank}) = 0.8$ and $p(\text{břeh} \mid \text{bank}) = 0.2$. As we also saw in lectures, these probabilities are usually estimated to be the relative frequencies that each source phrase was translated into each target phrase in the parallel corpus used to train the translation model. These scores are then combined along with a target language model and other features to find a good translation of a complete sentence.
+In phrase based translation, the decoder makes use of a **phrase table** which contains all possible translations learned from a parallel corpus into the target language, along with **scores** that give information about how probable the translation is. For example, in an English–Czech MT system, the phrase table might tell us that there are two translations for the English word *bank* into Czech: *banka* and *břeh* (corresponding to the financial institution sense and river bank sense, respectively), with translation probabilities $p(\text{banka} \mid \text{bank}) = 0.8$ and $p(\text{břeh} \mid \text{bank}) = 0.2$. As we also saw in lectures, these probabilities are usually estimated to be the relative frequencies that each source phrase was translated into each target phrase in the parallel corpus used to train the translation model. These scores are then combined along with a target language model and other features to find a good translation of a complete sentence.
 
 Let us consider the problem of translating the following two sentences into Czech:
 
@@ -32,9 +32,9 @@ Go to your clone of your course GitHub repository on the machine where you will 
 
     ./tools/get-new-assignments
 
-We have provided you with a trivial ranking algorithm that simply sorts the translation candidate list by $p(e|f)$.
-You will additionally be given several hundred thousand parallel Czech-English sentences along with some training data extracted therefrom.
-For convenience, we also provide dependency parses and POS tags for each sentence in training set.
+We have provided you with a trivial ranking algorithm that simply sorts the translation candidate list by $p(e \mid f)$.
+You will additionally be given several hundred thousand parallel Czech–English sentences along with some training data extracted therefrom.
+For convenience (and to inspire you!), we also provide dependency parses and POS tags for each input sentence in training, dev, and test sets.
 
 At test time, you will be given a new set of tuples $(x, c)$ and asked to predict, for each of these, the corresponding $y$ from among all the translation options for $x$ that you find in the provided phrase table (we denote the set of translation options as $\mathscr{Y}(x)$).
 
@@ -42,7 +42,7 @@ At test time, you will be given a new set of tuples $(x, c)$ and asked to predic
 
 The baseline you must implement (or beat) is a linear model that assigns a score to each translation in a phrase table for a source language phrase *in the context of a full sentence*. That is, the baseline model assigns a score to a translation option in a source language context as $\textit{score}(x,c,y) = \mathbf{f}(x,c,y) \cdot \mathbf{w}$. For the baseline model, you are required to do two things: (i) engineer the feature functions $\mathbf{f}(x,c,y)$ (we discuss the required features below) and (ii) learn the weight vector $\mathbf{w}$ from a corpus of a training examples which pair the sources phrases ($x$) and contexts ($c$) with a correct translation ($y^\*$).
 
-If the training data we provided had "reference scores", we could use linear regression to solve this problem. However, all we know is what translation was used in various different contexts (and of course, what other translations the model could have used - the phrase table). Therefore, to estimate the parameters of the scoring function, we will optimize the following pairwise ranking loss:
+If the training data we provided had "reference scores", we could use linear regression to solve this problem. However, all we know is what translation was used in various different contexts (and of course, what other translations the model could have used—the phrase table). Therefore, to estimate the parameters of the scoring function, we will optimize the following **pairwise ranking loss**:
 
 $$\begin{align\*}
 \mathscr{L}(x, c, y^\*) &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - \textit{score}(x, c, y^\*) + \textit{score}(x, c, y^-)) \\\\
