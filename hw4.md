@@ -6,9 +6,9 @@ title: Homework 4
 
 **Due 11:59pm on Tuesday, April 21, 2015**
 
-Usually during decoding we re given a translation table, where each phrase pair is assigned some fixed scores.
+In phrase based translation, the decoder makes use of a **phrase table** which contains all possible translations learned from a parallel corpus into the target language, along with **scores** that give information about how probable the translation is. For example, in an English-Czech MT system, the phrase table might tell us that there are two translations for the English word *bank* into Czech: *banka* and *břeh* (corresponding to the financial institution sense and river bank sense, respectively), with translation probabilities $p(\text{banka} \mid \text{bank}) = 0.8$ and $p(\text{břeh} \mid \text{bank}) = 0.2$. As we also saw in lectures, these probabilities are usually estimated to be the relative frequencies that each source phrase was translated into each target phrase in the parallel corpus used to train the translation model. These scores are then combined along with a target language model and other features to find a good translation of a complete sentence.
 
-Consider the following two input sentences:
+Let us consider the problem of translating the following two sentences into Czech:
 
 <center>i went to the <b>bank</b> to deposit my paycheck .</center>
 <br />
@@ -16,14 +16,11 @@ Consider the following two input sentences:
 <center>the log rolled down the <b>bank</b> and into the water .</center>
 <br />
 
-Usually during decoding we're given a translation table, in which each phrase pair is assigned some fixed scores.
-For example, we might know that overall in translating into Czech, $p(\text{banka} | \text{bank}) = 0.8$ and $p(\text{břeh} | \text{bank}) = 0.2$.
-
-Upon looking at these two input sentences, however, we might want to rethink those probabilities.
-In the former sentence, the correction translation of "bank" is  seems likely to be <i>banka</i> (financial institution), just like the phrase table predicts.
+Upon looking at these two input sentences, however, we might want to rethink the appropriateness of using context-independent relative frequencies to estimate the translation probabilities.
+In the former sentence, the correction translation of "bank" is seems likely to be <i>banka</i> (financial institution), just like the phrase table predicts.
 In the latter, however, it's more likely to be <i>břeh</i> (river bank) despite the translation table probabilities.
 
-**Your task is to use the context in the source sentence to rerank the translation options of the highlighted word.**
+**In this homework, your task is to use the *context* in the source sentence to rerank the translation options of the highlighted word.**
 
 This assignment will be graded by <i>mean reciprocol rank</i> (MRR), which captures the intuition that we want the "correct" translation (as determined by a reference sentence translation) to be highly ranked, even if it is not first in the reranked list.
 If the reference is the $n$th item in your reranked list, you will recieve a score of $\frac{1}{n}$ for that sentence.
@@ -43,9 +40,9 @@ At test time, you will be given a new set of tuples $(x, c)$ and asked to predic
 
 ## Baseline
 
-The baseline you must implement (or beat) is a linear model that assigns a score to each translation in a phrase table for a source language phrase *in the context of a full sentence*. That is, $\textit{score}(x,c,y) = \mathbf{f}(x,c,y) \cdot \mathbf{w}$. For the baseline model, you are required to do two things: (i) engineer the feature functions $\mathbf{f}(x,c,y)$ (we discuss the required features below) and (ii) learn the weight vector $\mathbf{w}$ from a corpus of a training examples which pair the sources phrases ($x$) and contexts ($c$) with a correct translation ($y^\*$).
+The baseline you must implement (or beat) is a linear model that assigns a score to each translation in a phrase table for a source language phrase *in the context of a full sentence*. That is, the baseline model assigns a score to a translation option in a source language context as $\textit{score}(x,c,y) = \mathbf{f}(x,c,y) \cdot \mathbf{w}$. For the baseline model, you are required to do two things: (i) engineer the feature functions $\mathbf{f}(x,c,y)$ (we discuss the required features below) and (ii) learn the weight vector $\mathbf{w}$ from a corpus of a training examples which pair the sources phrases ($x$) and contexts ($c$) with a correct translation ($y^\*$).
 
-Since our training data does not provide scores directly (it just tells you what translation is correct in context), your scoring function should be learned according to the following objective:
+If the training data we provided had "reference scores", we could use linear regression to solve this problem. However, all we know is what translation was used in various different contexts (and of course, what other translations the model could have used - the phrase table). Therefore, to estimate the parameters of the scoring function, we will optimize the following pairwise ranking loss:
 
 $$\begin{align\*}
 \mathscr{L}(x, c, y^\*) &= \sum_{y^- \in \mathscr{Y}(x) \setminus y^\*} \max(0, \gamma - \textit{score}(x, c, y^\*) + \textit{score}(x, c, y^-)) \\\\
@@ -55,9 +52,9 @@ $$\begin{align\*}
 
 where $\mathbf{f}(x, c, y^\*)$ is a function that takes a source phrase, context, and translation hypothesis and returns a vector of real-valued features and $w$ is a weight vector to be learned from training data. Here $\mathscr{L}(x, c, y^\*)$ is <i>per-instance</i> loss, which should be summed over all training instances to calculate the <i>total corpus loss</i>.
 
-Intuitively, what this objective says is that the score of the right translation ($y^\*$) of $x$ in context $c$ needs to be higher than the score of all the other translations (the $y^-$) of $x$, by a margin of at least $\gamma$ (you can pick any number greater than or equal to 0 for $\gamma$). If the model picks the wrong answer, or if it picks the right answer, but its score is too close to that of a wrong answer, you will suffer a penalty.
+Intuitively, what this objective says is that the score of the right translation ($y^\*$) of $x$ in context $c$ needs to be higher than the score of all the other translations (the $y^-$) of $x$, by a margin of at least $\gamma$ (you can pick any number greater than 0 for $\gamma$; however note that if you set it to 0, there would be a degenerate solution which set $\mathbf{w}=0$ which would not be a very useful model). Thus, if ranks the wrong translation in context higher than the right translation, or if it picks the right answer, but its score is too close to that of the wrong answer, you will suffer a penalty.
 
-Your learner should optimize this objective function using stochastic subgradient descent. That is you should iteratively perform the update
+Your learner should optimize this objective function using stochastic subgradient descent. That is, you should iteratively perform the update
 
 $$\mathbf{w}_{(i+1)} = \mathbf{w}_{(i)} - \alpha \cdot \frac{\partial \mathscr{L}(x, c, y^\*)}{\partial \mathbf{w}}$$
 
