@@ -71,9 +71,9 @@ Welcome to Machine Translation (11-731). This 12-credit graduate course will pro
 
 ## Piazza
 
-This semester we will be using Piazza for class discussion. The system is designed to get you help fast and efficiently from classmates, Wang, Alon, and me. *Rather than emailing questions to the instructors, we encourage you to post your questions on [Piazza](https://piazza.com/cmu/spring2014/11731/home)*. It supports LaTeX for equations, syntax highlighting for code and keeps all materials related to the course in one place.
+This semester we will be using Piazza for class discussion. The system is designed to get you help fast and efficiently from classmates, Wang, Alon, and me. *Rather than emailing questions to the instructors, we encourage you to post your questions on [Piazza](https://piazza.com/cmu/spring2016/11731/home)*. It supports LaTeX for equations, syntax highlighting for code and keeps all materials related to the course in one place.
 
-[Find our class page here.](https://piazza.com/cmu/spring2014/11731/home)
+[Find our class page here.](https://piazza.com/cmu/spring2016/11731/home)
 
 ## Software
 
