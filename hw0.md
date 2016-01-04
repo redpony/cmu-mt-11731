@@ -4,7 +4,7 @@ title: Homework 0
 ---
 # Homework 0
 
-**Due 11:59pm on Sunday, Jan. 19, 2014.**
+**Due 11:59pm on Sunday, Jan. 19, 2016.**
 
 This course has four homework assignments (not including this one) which are competitive, but which will be done in the open so you have the opportunity to learn from each other. This preliminary assignment will help you get the required development environment set up.
 
@@ -13,7 +13,7 @@ This course has four homework assignments (not including this one) which are com
 We will be using *public* GitHub repositories for all assignments in this course. If you are not familiar with source code management with `git`, you might read [this comprehensive tutorial](http://www.vogella.com/articles/Git/article.html) or [this crash course for SVN users](http://git.or.cz/course/svn.html).
 
  * [Create a user account on GitHub](https://github.com/signup/free) if you do not have one. *You are welcome to reuse an existing account for this course*.
- * Fork the course [master git repository](https://github.com/clab/sp2014.11-731). You can use the web interface to do this:
+ * Fork the course [master git repository](https://github.com/clab/sp2016.11-731). You can use the web interface to do this:
 ![Fork]({{site.baseurl}}/img/fork.png)
 
  * Check out the git repository you forked on the machine where you will do your coding assignments (you can use a shared machine, desktop, or laptop).
@@ -48,7 +48,7 @@ In this section, you will pick a screen name for the course leaderboard and tell
 
 ## Post your GitHub repository to Piazza
 
- * Post the URL of your forked course repository to [Piazza](https://piazza.com/cmu/spring2014/11731/home) (it should be something like `git://github.com/username/sp2014.11-731.git`)
+ * Post the URL of your forked course repository to [Piazza](https://piazza.com/cmu/spring2016/11731/home) (it should be something like `git://github.com/username/sp2016.11-731.git`)
 
 That’s it, you’re done!
 
