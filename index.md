@@ -77,20 +77,17 @@ This semester we will be using Piazza for class discussion. The system is design
 
 ## Software
 
- * [cdec](http://www.cdec-decoder.org/) is a machine translation research platform developed at CMU (C++)
+ * [GroundHog](https://github.com/lisa-groundhog/GroundHog) is an open-source neural MT implementation (Python/Theano)
  * [Moses](http://www.statmt.org/moses/) is a widely-used machine translation toolkit that includes phrase-based and syntactic model support (C++)
- * [Joshua](http://cs.jhu.edu/~ccb/joshua/) is a translation toolkit designed for syntax-based models (Java)
- * [Cubit](http://www.cis.upenn.edu/~lhuang3/cubit/) is a very simple phrase-based decoder (Python)
- * [SRILM](http://www.speech.sri.com/projects/srilm/) is SRI’s language modeling toolkit (C++)
+ * [cdec](http://www.cdec-decoder.org/) is a machine translation research platform developed at CMU (C++)
  * [KenLM](http://kheafield.com/code/kenlm/) is a highly optimized library for representing and querying $n$-gram language models (C++)
- * [BerkeleyLM](http://code.google.com/p/berkeleylm/) is another $n$-gram language model library (Java)
  * [Giza++](http://code.google.com/p/giza-pp/) implements EM training for the IBM translation models and is widely used for word alignment (C++)
 
 ## Freely Available (Parallel) Corpora
 
  * [WIT<sup>3</sup>](https://wit3.fbk.eu/) is a transcribed corpus of [TED talks](http://www.ted.com/talks) in many languages (small/medium).
- * The [2012 Workshop on Machine Translation Shared Task](http://statmt.org/wmt12/translation-task.html) distributes European Parliament (large) and News Commentary (medium) parallel data as well as standard development and test sets.
- * [OPUS](http://opus.lingfil.uu.se/) is a growing collection of parallel data in many domains and languages.
+ * The [2015 Workshop on Machine Translation Shared Task](http://statmt.org/wmt15/translation-task.html) distributes European Parliament (large) and News Commentary (medium) parallel data as well as standard development and test sets.
+ * [OPUS](http://opus.lingfil.uu.se/) is a collection of parallel data in many domains and languages.
 
 ## Other MT Courses
 
