@@ -79,11 +79,12 @@ This semester we will be using Piazza for class discussion. The system is design
 
  * [Blocks](https://github.com/mila-udem/blocks) helps build complex neural networks on top of Theano and includes a reference implementation of a neural MT system (Python/Theano)
  * [GroundHog](https://github.com/lisa-groundhog/GroundHog) is an open-source neural MT implementation (Python/Theano)
+ * [cnn](https://github.com/clab/cnn.git) is CMU’s answer to Torch and Theano, somewhat optimized for language and translation models. (C++/Python)
  * [Moses](http://www.statmt.org/moses/) is a widely-used machine translation toolkit that includes phrase-based and syntactic model support (C++)
  * [cdec](http://www.cdec-decoder.org/) is a machine translation research platform developed at CMU (C++)
- * [KenLM](http://kheafield.com/code/kenlm/) is a highly optimized library for representing and querying $n$-gram language models (C++)
- * [Giza++](http://code.google.com/p/giza-pp/) is implements EM training for the IBM translation models and is widely used for word alignment (C++)
+ * [KenLM](http://kheafield.com/code/kenlm/) is a highly optimized library for representing and querying count-based $n$-gram language models (C++)
  * [fast_align](https://github.com/clab/fast_align) is a fast, easy-to-use word alignment tool (C++)
+ * [Giza++](http://code.google.com/p/giza-pp/) is implements EM training for the IBM translation models and is widely used for word alignment (C++)
 
 ## Freely Available (Parallel) Corpora
 
