@@ -1,6 +1,0 @@
----
-title: <i>NO CLASS</i> (Carnival)
-slides: 25.adv.pdf
-day: 25
-reading:
----

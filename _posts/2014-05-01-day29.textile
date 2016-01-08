@@ -1,6 +1,0 @@
----
-title: Course Wrap-up
-slides: 29.final.pdf
-day: 29
-reading:
----

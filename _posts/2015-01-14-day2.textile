@@ -12,12 +12,4 @@ reading:
     author: Borman
     title: The Expectation Maximization Algorithm
     url: http://www.seanborman.com/publications/EM_algorithm.pdf
-  -
-    author: Klein and Manning
-    title: Maxent Models, Conditional Estimation, and Optimization, without the Magic
-    url: http://www.cs.berkeley.edu/~klein/papers/maxent-tutorial-slides.pdf
-  -
-    author: Lafferty et al.
-    title: Conditional Random Fields
-    url: http://www.cis.upenn.edu/~pereira/papers/crf.pdf
 ---
