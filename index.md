@@ -6,7 +6,7 @@ title: Overview
 
 ## At a Glance
 
- * **Instructor**: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) | GHC 5707 | By appointment 
+ * **Instructor**: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) | GHC 5707 | Fridays 4:15
 * **TA**: [Manaal Faruqui](http://www.cs.cmu.edu/~mfaruqui/) | GHC 5709 | TBD
  * **Location**: [Porter Hall A20](https://www.cmu.edu/computing/class-event/classrooms/porter/A20.html)
  * **Time**: Tuesday/Thursday 1:30–2:50
