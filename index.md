@@ -88,7 +88,7 @@ This semester we will be using Piazza for class discussion. The system is design
 
 ## Freely Available (Parallel) Corpora
 
- * [WIT<sup>3</sup>](https://wit3.fbk.eu/) is a transcribed corpus of [TED talks](http://www.ted.com/talks) in many languages (small/medium).
+ * [WIT<sup>3</sup>](https://wit3.fbk.eu/) is a transcribed corpus of [TED talks](http://www.ted.com/talks) and their translations into many languages (small/medium).
  * The Workshop on Machine Translation hosts annually a translation competition for which they provide free training and evaluation resources. Different years have somewhat different sets of languages. [2016](http://statmt.org/wmt16/translation-task.html), [2015](http://statmt.org/wmt15/translation-task.html), [2014](http://statmt.org/wmt14/translation-task.html), [2013](http://statmt.org/wmt13/translation-task.html), [2012](http://statmt.org/wmt12/translation-task.html) (medium/large)
  * [OPUS](http://opus.lingfil.uu.se/) is a collection of parallel data in many domains and languages.
 
