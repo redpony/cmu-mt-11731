@@ -17,7 +17,7 @@ title: Overview
 
 ## Overview
 
-Welcome to Machine Translation (11-731). This 12-credit graduate course will provide a comprehensive overview of current techniques in machine translation, such as those used by [Google Translate](http://translate.google.com/) and [Bing Translator](http://www.bing.com/translator).
+Welcome to Machine Translation (11-731). This 12-credit graduate course will provide a comprehensive overview of current techniques in machine translation, such as those used by [Google Translate](http://translate.google.com/) and [Bing Translator](http://www.bing.com/translator). This course is a survey of methods in machine translation, including the traditional noisy channel formulation of Brown et al. (1993), phrase- and syntax-based models that were introduced in the 2000's, and neural-network models that have become popular in the last several years. This is a programming-heavy course that focuses on implementation and experimentation.
 
 ## Syllabus
 
