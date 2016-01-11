@@ -23,7 +23,7 @@ Welcome to Machine Translation (11-731). This 12-credit graduate course will pro
 
 <table> 
   <tbody>
-    <tr><th></th><th><b>Date</b></th><th><b>Topic</b></th><th><b>Book</b></th><th><b>Further Readings</b></th>
+    <tr><th></th><th><b>Date</b></th><th><b>Topic</b></th><th><b>Book</b></th><th><b>Papers</b></th>
     </tr>
 
     {{ site.posts }}
