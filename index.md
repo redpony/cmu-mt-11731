@@ -94,6 +94,7 @@ This semester we will be using Piazza for class discussion. The system is design
 
 ## Other MT Courses
 
+ * A [one week Neural MT douce](http://dl4mt.computing.dcu.ie/#/home) held at DCU
  * A [one week MT course](http://staffwww.dcs.shef.ac.uk/people/T.Cohn/mt/) by [Trevor Cohn](http://staffwww.dcs.shef.ac.uk/people/T.Cohn/)
  * A [one week MT course](http://www.cs.jhu.edu/~alopez/esslli2010.html) at ESSLI 2010 by [Adam Lopez](http://www.cs.jhu.edu/~alopez/)
  * [Chris Callison-Burch](http://www.cs.jhu.edu/~ccb/) and [Philipp Koehn](http://homepages.inf.ed.ac.uk/pkoehn/) taught a one week MT course at ESSLI 2005: [1](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day1.pdf) [2](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day2.pdf) [3](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day3.pdf) [4](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day4.pdf) [5](http://homepages.inf.ed.ac.uk/pkoehn/publications/esslli-slides-day5.pdf)
