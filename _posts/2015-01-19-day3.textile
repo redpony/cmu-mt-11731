@@ -17,6 +17,10 @@ reading:
     title: A Neural Probabilistic Language Model
     url: http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf
   -
+    author: Mnih and Hinton
+    title: Three New Graphical Models for Statistical Language Modelling
+    url: http://www.machinelearning.org/proceedings/icml2007/papers/425.pdf
+  -
     author: Mikolov et al.
     title: Recurrent neural network based language model
     url: http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf
