@@ -7,7 +7,7 @@ reading:
   -
     author: Goldwater
     title: Basic probability theory
-    url: http://homepages.inf.ed.ac.uk/sgwater/teaching/general/probability.pdf
+    url: http://homepages.inf.ed.ac.uk/sgwater/math_tutorials.html
   -
     author: Johnson
     title: Joint and conditional estimation of tagging and parsing models
