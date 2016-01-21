@@ -4,7 +4,7 @@ title: Homework 1
 ---
 # Homework 1
 
-**Due 11:59pm on Thursday, Feb. 12, 2016**
+**Due 11:59pm on Thursday, Feb. 11, 2016**
 
 Word alignment is a fundamental task in statistical machine translation. This homework will give you an opportunity to explore solutions to this challenging and interesting problem.
 
@@ -75,7 +75,7 @@ The iterative EM update for this model is straightforward. At each iteration, fo
 ## Ground Rules
 
  * You may work in independently or in groups of up to three students, under these conditions:
-    * You must notify us by posting a public note to piazza including the e-mails of everyone who will be working in the group.
+    * You must notify us by posting a public note to Piazza including the e-mails of everyone who will be working in the group.
     * Everyone in the group will receive the same grade on the assignment.
     * Once you have formed a group, you may **not** disband until the next homework.
 
