@@ -1,22 +1,10 @@
 ---
-title: Discriminative Alignment Models
-slides: 06.discalign.pdf
+title: Lexical Translation Models III
+slides: 06.lex3.pdf
 day: 6
 reading:
   -
-    author: Moore
-    title: A Discriminative Framework for Bilingual Word Alignment
-    url: http://www.aclweb.org/anthology/H05-1011
-  -
-    author: Blunsom and Cohn
-    title: Discriminative Word Alignment with Conditional Random Fields 
-    url: http://www.aclweb.org/anthology/P06-1009
-  -
-    author: Riesa et al.
-    url: http://www.aclweb.org/anthology/D11-1046
-    title: Feature-Rich Language-Independent Syntax-Based Alignment for Statistical Machine Translation
-  -
-    author: Liu et al.
-    title: Discriminative Word Alignment by Linear Modeling
-    url: http://www.mitpressjournals.org/doi/pdf/10.1162/coli_a_00001
+    author: Gal and Blunsom
+    title: A Systematic Bayesian Treatment of the IBM Alignment Models
+    url: http://www.aclweb.org/anthology/N13-1117
 ---
