@@ -7,4 +7,8 @@ reading:
     author: Gal and Blunsom
     title: A Systematic Bayesian Treatment of the IBM Alignment Models
     url: http://www.aclweb.org/anthology/N13-1117
+  -
+    author: Schoenemann
+    title: Computing Optimal Alignments for the IBM-3 Translation Model
+    url: http://www2.maths.lth.se/vision/publdb/reports/pdf/schoenemann-ccnll-10.pdf
 ---
