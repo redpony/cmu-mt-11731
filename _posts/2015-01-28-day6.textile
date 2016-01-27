@@ -13,6 +13,6 @@ reading:
     url: http://www2.maths.lth.se/vision/publdb/reports/pdf/schoenemann-ccnll-10.pdf
   -
     author: Levinboim et al.
-    title: Model Invertibility Regularization: Sequence Alignment With or Without Parallel Data
+    title: Model Invertibility Regularization; Sequence Alignment With or Without Parallel Data
     url: http://www3.nd.edu/~tlevinbo/papers/NAACL15_MIR.pdf
 ---
