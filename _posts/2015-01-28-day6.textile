@@ -1,6 +1,6 @@
 ---
 title: Lexical Translation Models III
-slides: 06-lex3.pdf
+slides: 06-lextrans3.pdf
 day: 6
 reading:
   -
