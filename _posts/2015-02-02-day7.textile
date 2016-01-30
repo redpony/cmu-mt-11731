@@ -1,6 +1,6 @@
 ---
 title: Discriminative Alignment Models
-slides: 07.discalign.pdf
+slides: 07-discalign.pdf
 day: 7
 reading:
   -

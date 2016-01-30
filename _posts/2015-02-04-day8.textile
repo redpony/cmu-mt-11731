@@ -1,6 +1,6 @@
 ---
 title: Noisy Channel Translation
-slides: 08.noisy.pdf
+slides: 08-noisy.pdf
 day: 8
 reading:
   -

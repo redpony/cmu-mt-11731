@@ -1,6 +1,6 @@
 ---
 title: Language Models
-slides: 01.intro.pdf
+slides: 03-lm.pdf
 day: 3
 book: 4.3, 7
 reading:
