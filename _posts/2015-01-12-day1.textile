@@ -3,6 +3,7 @@ title: Introduction
 slides: 01-intro.pdf
 day: 1
 book: 1
+language-in-10: ainu
 reading:
   -
     author: Knight
