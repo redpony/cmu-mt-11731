@@ -51,7 +51,7 @@ Your course project will be a substantial research effort carried out by each st
 
 The milestones will be:
  * Pre-project proposal meeting with instructor (**2 points**)
- * Project proposal (**8 points**; 2 pages), due February 28
+ * Project proposal (**8 points**; 2 pages), due February 29 (11:59 pm)
    * What problem are you going to solve? (You must give a concrete *example* illustrating the problem you are trying to solve.)
    * What is your proposed solution?
    * What is your implementation plan?
