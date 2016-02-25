@@ -1,0 +1,20 @@
+---
+title: Evaluation
+slides: 09-heval.pdf
+book: 8
+day: 9
+language-in-10: HKCantonese
+reading:
+  -
+    author: Lavie and Denkowski
+    title: The METEOR Metric for Automatic Evaluation of Machine Translation
+    url: http://www.cs.cmu.edu/afs/cs.cmu.edu/project/mteval-1/Papers/MT-Journal-2009/meteor-mtj-2009.pdf
+  -
+    author: Papineni et al.
+    title: 'BLEU: a Method for Automatic Evaluation of Machine Translation'
+    url: http://acl.ldc.upenn.edu/P/P02/P02-1040.pdf
+  -
+    author: Snover et al.
+    title: A Study of Translation Edit Rate with Targeted Human Annotation
+    url: http://www.cs.umd.edu/~snover/pub/amta06/ter_amta.pdf
+---

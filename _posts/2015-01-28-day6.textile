@@ -2,6 +2,7 @@
 title: Lexical Translation Models III
 slides: 06-lextrans3.pdf
 day: 6
+language-in-10: Amharic
 reading:
   -
     author: Gal and Blunsom

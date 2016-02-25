@@ -2,6 +2,7 @@
 title: Discriminative Alignment Models
 slides: 07-discalign.pdf
 day: 7
+language-in-10: Korean
 reading:
   -
     author: Moore

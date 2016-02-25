@@ -3,6 +3,7 @@ title: Lexical Translation Models I
 slides: 04-lextrans1.pdf
 day: 4
 book: 4.1-4.2, 4.5
+language-in-10: Ainu
 reading:
   -
     author: Brown et al.
