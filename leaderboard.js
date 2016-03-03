@@ -87,5 +87,5 @@ function drawLeaderboard() {
   }
 }
 
-resort(1, 0);
+resort(3, 0);
 drawLeaderboard();
