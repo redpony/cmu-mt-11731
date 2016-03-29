@@ -50,11 +50,9 @@ With a decoder RNN, we can first obtain the hidden layer at time $t$ as:
 $\mathbf{s}_t = g(\mathbf{s}_{t-1}, {\{\mathbf{e}, \mathbf{y}_{t-1}\}})$
 and feed this into a softmax layer to obtain the conditional probability as:
 \begin{equation}
-p(y_t = i | \mathbf{e},\vec{y}_{<t}) = \mathrm{softmax}(\mathbf{W}_s\mathbf{s}_t + \mathbf{b}_s)_i
+p(y_t = i | \mathbf{e}, \langle y_1, \cdots, y_{t-1}\rangle) = \mathrm{softmax}(\mathbf{W}_s\mathbf{s}_t + \mathbf{b}_s)_i
 \end{equation}
-where, $\vec{y}_{<t} = \langle y_1, \cdots, y_{t-1}\rangle$.
-In recent work, both $f$ and $g$ are generally LSTMs,
-a kind of RNN which we describe next.
+Both $f$ and $g$ are generally LSTMs.
 
 
 ## Getting started
@@ -69,7 +67,7 @@ To earn 7 points on this assignment, you must **implement an encoder-decoder mod
 
 ## The Challenge
 
-As discussed in the class, a neural encoder-decoder model often produces fluent sentences but lacks the proper content. This is due to the fact the model does not enforce the decoder to ``cover'' parts of the input sentence to be translated (in contrast to standard phrase-based systems). Thus, the decoder can produce any words in the output which need not correspond to words in the input. 
+As discussed in the class, a neural encoder-decoder model often produces fluent sentences but lacks the proper content. This is due to the fact the model does not enforce the decoder to "cover" parts of the input sentence to be translated (in contrast to standard phrase-based systems). Thus, the decoder can produce any words in the output which need not correspond to words in the input. 
 
 The attentional encoder-decoder model tries to improve upon this model, where it decides to give attention to certain parts of the input while generating words in the output. However, it still does not enforce any strong restrictions on what can be produced in the output. Your job in this assignment is to improve upon the simple attention model.
 
