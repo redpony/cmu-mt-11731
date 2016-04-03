@@ -32,7 +32,6 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
         <a href="javascript:;" onclick="resort(2, 1); drawLeaderboard(); return false;">#1</a><br/>
         <span class="small">AER</span>
       </th>
-<!--
       <th valign="top">
         <a href="javascript:;" onclick="resort(3, 0); drawLeaderboard(); return false;">#2</a><br/>
         <span class="small">Accuracy</span>
@@ -43,9 +42,8 @@ This page contains the assignment leaderboard. The leaderboard is updated as fol
       </th>
       <th valign="top">
         <a href="javascript:;" onclick="resort(5, 0); drawLeaderboard(); return false">#4</a><br/>
-        <span class="small">MRR</span>
+        <span class="small">BLEU</span>
       </th>
--->
     </tr>
   </thead>
   <tbody id="scorediv">
