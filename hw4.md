@@ -16,15 +16,17 @@ and finding the best translation into a target language, according to a model:
 <center><i>how long does it take on foot ?</i></center>
 <br />
 
-**Your task in this assignment is to design a neural encoder-decoder machine translation model with attention that can translate a Chinese sentence into English.** The baseline model is an
-encoder-decoder model with attention, and the research problem is to improve upon the model.
+**Your task in this assignment is to design a neural encoder-decoder machine translation model with attention that can translate a Chinese sentence into English.** You will be evaluated on the translation quality, BLEU score.
+The baseline model is an encoder-decoder model with attention, and the research problem is to improve upon the model.
+The default model is an LSTM-RNN language model, initialized using the average of the source word vectors, and the next word in the target is predicted by providing as input the current word to the LSTM-RNN model 
+(we provide a sample script for monolingual LSTM-RNN language model in the assignment).
 
-Unlike in HW3, you will be evaluated on the translation quality, BLEU score.
-
+We will now describe the encoder-decoder framework for machine translation
+(Please refer to the slides on how to incorporate attention in this model).
 In the encoder-decoder framework, an encoder reads a variable length input
-sequence, into a sequence of vectors $\vec{\mathbf{x}} = \langle \mathbf{x}_1,
+sequence, into a sequence of vectors $\mathbf{X} = \langle \mathbf{x}_1,
 \cdots, \mathbf{x}_T\rangle$ (corresponding to a sequence of input symbols
-$\vec{x} = \langle x_1,
+$X = \langle x_1,
 \cdots, x_T\rangle$) and generates a fixed-dimensional vector
 representation of the sequence.
 $\mathbf{x}_t \in \mathbb{R}^{l}$ is an input vector of length $l$.
@@ -35,25 +37,27 @@ The most common approach is to use an RNN such that:
 where $\mathbf{h}_t \in \mathbb{R}^n$ is a hidden state at time $t$, and
 $f$ is generally a non-linear transformation, producing
 $\mathbf{e} := \mathbf{h}_{T+1}$ as the input representation.
+(In the default model used in this assignment, $\mathbf{e}$ is the average of the source word vectors i.e, $\mathbf{e}$ = $\frac{\sum_{t}\mathbf{x}_t}{T}$ )
 The decoder is
 trained to predict the next output $y_t$ given the encoded input vector
 $\mathbf{e}$ and all the previously predicted outputs
 $\langle y_1, \cdots y_{t-1}\rangle$.
 In other words, the decoder defines a probability over the output sequence
-$\vec{y} = \langle y_1, \cdots, y_{T'}\rangle$ by decomposing
+$Y = \langle y_1, \cdots, y_{T'}\rangle$ by decomposing
 the joint probability into ordered conditionals:
 \begin{equation}
-p(\vec{y}|\vec{x}) = \prod_{t=1}^{T'} \nolimits p(y_t |
-\mathbf{e}, \langle y_1, \cdots, y_{t-1}\rangle)
+p(Y|X) = \prod_{t=1}^{T'} \nolimits p(y_t | \langle y_1, \cdots, y_{t-1}\rangle)
 \end{equation}
 With a decoder RNN, we can first obtain the hidden layer at time $t$ as:
-$\mathbf{s}_t = g(\mathbf{s}_{t-1}, {\{\mathbf{e}, \mathbf{y}_{t-1}\}})$
+$\mathbf{s}_t = $LSTM$(\mathbf{s}_{t-1}, \mathbf{y}_{t-1})$
 and feed this into a softmax layer to obtain the conditional probability as:
 \begin{equation}
-p(y_t = i | \mathbf{e}, \langle y_1, \cdots, y_{t-1}\rangle) = \mathrm{softmax}(\mathbf{W}_s\mathbf{s}_t + \mathbf{b}_s)_i
+p(y_t = i | \langle y_1, \cdots, y_{t-1}\rangle) = \mathrm{softmax}(\mathbf{W}_s\mathbf{s}_t + \mathbf{b}_s)_i
 \end{equation}
-Both $f$ and $g$ are generally LSTMs.
-
+In other words, the current hidden layer of the LSTM is obtained by feeding in the
+previous output vector in the LSTM decoder. Then the current hidden layer is projected using an affine
+transformation to a vector of the size of the target vocabulary. This vector is passed through a softmax
+function to obtain probability distribution on the current output.
 
 ## Getting started
 
@@ -63,7 +67,7 @@ Go to your clone of your course GitHub repository on the machine where you will 
 
 We have provided you with a neural LSTM language model that learns to predict the next word in the sentence given the history. This should give you an idea of how to implement the decoder in the MT system and how to initialise the initial state of an LSTM.
 
-To earn 7 points on this assignment, you must **implement an encoder-decoder model with attention** or **modify the provided language model decoder** so that it is capable of translating an input word sequence to output word sequence.
+To earn 7 points on this assignment, you must **implement an encoder-decoder model with attention** or **modify the provided language model decoder** so that it is capable of translating an input word sequence to output word sequence. Please note that even implementing the baseline in this assignment is a heavy amount of work, so start early. The word vectors are of length 50, and the size of the hidden layer in the LSTM is 50, with both the encoder and decoder having only 1 layer. 
 
 ## The Challenge
 
@@ -75,6 +79,10 @@ Here are some ideas:
 
 * Using global and local attention during decoding ([Thang et al, 2015] (http://stanford.edu/~lmthang/data/papers/emnlp15_attn.pdf))
 * Enforcing structural alignment bias in attention ([Cohn et al, 2016] (http://arxiv.org/pdf/1601.01085.pdf))
+* Providing the encoded input at every time-step in the decoder ([Faruqui et al, 2016] (http://www.cs.cmu.edu/~mfaruqui/papers/naacl16-inflection.pdf))
+* Use a forward-backward (bi-directional) LSTM model for the encoder ([Graves et al 2005] (http://www.cs.toronto.edu/~graves/icann_2005.pdf))
+* Use ensembles of trained models in the decoder.
+* Try different sizes of the hidden layer, the word vectors etc.
 
 ## Ground Rules
 
